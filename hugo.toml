@@ -1,0 +1,11 @@
+baseURL = 'http://www.abstractionjackson.com'
+languageCode = 'en-us'
+title = 'Abstraction Jackson'
+
+theme = 'vicelike'
+
+[menu]
+[[menu.main]]
+identifier = 'portfolio'
+name = 'portfolio'
+url = '/portfolio/'

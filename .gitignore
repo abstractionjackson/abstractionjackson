@@ -1,0 +1,40 @@
+# Hugo generated directories
+**/public
+**/resources
+
+# Hugo-generated files
+**/.hugo_build.lock
+**/*.css
+**/*.css.map
+**/*.min.css
+**/*.min.css.map
+**/*.scss_*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor and IDE generated files
+*.swp
+*.swo
+*.swn
+*.log
+*.tlog
+*.bak
+*.cache
+*.sublime*
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node (if you're using any build tools or front-end frameworks)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Other common directories/files to ignore
+*.sass-cache/
+*.backup

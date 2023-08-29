@@ -1,0 +1,3 @@
+[submodule "themes/vicelike"]
+	path = themes/vicelike
+	url = https://github.com/abstractionjackson/vicelike

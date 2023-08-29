@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main
+  class="list"
+  id="portfolio"
+>
+  <div id="content">{{ .Content }}</div>
+  <div id="projects">
+    <ul>
+      {{/* range site regular pages where type is "project" */}} {{ range where
+      .Site.RegularPages "Type" "project" }}
+      <li>{{ partial "post/preview.html" . }}</li>
+      {{ end }}
+    </ul>
+  </div>
+</main>
+{{ end }}

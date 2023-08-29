@@ -1,0 +1,9 @@
+{{ define "siteStyles" }} {{ with resources.Get "sass/about.scss" | toCSS |
+minify | fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ .Permalink }}"
+/>
+{{ end }} {{ end }} {{ define "main" }}
+<main id="about">{{ .Content }}</main>
+{{ end }}
