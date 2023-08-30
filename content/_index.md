@@ -3,17 +3,23 @@ title = ""
 date = 2023-08-27T12:30:40-07:00
 +++
 
-## Your One-Stop Solution for Web Development Tutoring, IT Consulting, and Software Engineering Services
+### Services
 
-Welcome to Abstraction Jackson, where we simplify the complexities of the digital world for you. Whether you're a budding developer looking for one-on-one tutoring, a business in need of top-notch IT consulting, or a project manager seeking software engineering expertise, we've got you covered.
+<!-- Welcome to Abstraction Jackson, where we simplify the complexities of the digital world for you. Whether you're a budding developer looking for one-on-one tutoring, a business in need of top-notch IT consulting, or a project manager seeking software engineering expertise, we've got you covered. -->
 
----
-
-### Summary of Services
-
-- **Web Development Tutoring**: Master the art of creating stunning websites and robust applications.
-- **IT Consulting**: Optimize your business operations with our tailored IT solutions.
-- **Software Engineering Services**: Bring your software ideas to life with our end-to-end development services.
+- {{< service_card
+    image="tut"
+    alt="a group anfd computer"
+    heading="Private Tutoring" description="Master the art of creating stunning websites and robust applications." >}}
+- {{< service_card
+    image="it_consult"
+    alt="a collaborative environment"
+    heading="IT Consulting"
+    description="Optimize your business operations with our tailored IT solutions." >}}
+- {{< service_card
+    image="web_dev"
+    alt="the computer"
+    heading="Software Development" description="Bring your software ideas to life with our end-to-end development services." >}}
 
 ---
 

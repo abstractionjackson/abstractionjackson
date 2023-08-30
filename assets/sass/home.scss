@@ -1,86 +1,113 @@
 // Base styles
-main#home{
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    header#home-hero {
-      @import 'hero';
-    }
-      // Header styles
-    #abstraction-jackson {
-        background: #50b3a2;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-        font-size: 2.5rem;
-        border-radius: 8px 8px 0 0;
-    }
+main#home {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  header#home-hero {
+    @import 'hero';
+  }
+  section#home-content {
+    padding: 0 1rem;
+    margin: auto;
+
     // Sub-headings and Paragraphs
-    #your-one-stop-solution-for-web-development-tutoring-it-consulting-and-software-engineering-services,
-    #summary-of-services,
+    #services,
     #featured-services,
     #connect-with-us {
-        font-size: 1.5rem;
-        margin-top: 1.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    p {
-        margin-bottom: 1rem;
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
     }
 
-  // Lists
-  ul {
-    list-style: none;
-    padding-left: 0;
-  
-    li {
-      background: #eee;
-      margin: 0.5rem 0;
-      padding: 1rem;
-      border-radius: 4px;
+    p {
+      margin-bottom: 1rem;
     }
-  }
-  
-  // Sub-sections under Featured Services
-  h4 {
-    font-size: 1.3rem;
-    margin-top: 1rem;
-  }
-  
-  // Connect With Us
-  #connect-with-us {
-        ul {
+
+    // Lists
+    ul {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin: 0.5rem 0;
+        padding: 1rem;
+        border-radius: 4px;
+      }
+    }
+    // Services Section
+    // description: first p after #services
+    #services + p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      // indent
+      text-indent: 2rem;
+    }
+    // services: first ul
+    #services + ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      li {
+        border: 1px solid #ccc;
+        border-radius: 1rem;
+        margin: 0.75rem;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+        // pop-out effect
+        &:hover {
+          // ease
+          transition: all 0.3s ease;
+          transform: scale(1.01);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+      }
+      h2 {
+        font-size: 1.2em;
+        margin: 1rem 0 0 0;
+      }
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    // Sub-sections under Featured Services
+    h4 {
+      font-size: 1.3rem;
+      margin-top: 1rem;
+    }
+
+    // Connect With Us
+    #connect-with-us {
+      ul {
         display: flex;
         justify-content: center;
         gap: 15px;
-    
-            li {
-                background: none;
-            }
-        
-            a {
-                color: #333;
-                padding: 10px 20px;
-                background: #50b3a2;
-                border-radius: 4px;
-                text-decoration: none;
-                transition: background 0.3s ease;
-        
-                &:hover {
-                background: darken(#50b3a2, 10%);
-                }
-            }
+
+        li {
+          background: none;
         }
+
+        a {
+          color: #333;
+          padding: 10px 20px;
+          background: #50b3a2;
+          border-radius: 4px;
+          text-decoration: none;
+          transition: background 0.3s ease;
+
+          &:hover {
+            background: darken(#50b3a2, 10%);
+          }
+        }
+      }
     }
-  
+
     // Horizontal Rules
     hr {
-        border: 0;
-        height: 1px;
-        background: #ccc;
-        margin: 1.5rem 0;
+      border: 0;
+      height: 1px;
+      background: #ccc;
+      margin: 1.5rem 0;
     }
   }
-  
+}

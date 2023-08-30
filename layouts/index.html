@@ -8,6 +8,6 @@ $styles := resources.ToCSS . | minify | fingerprint }}
 {{ end }} {{ end }} {{ define "main" }}
 <main id="home">
   <header id="home-hero">{{ partial "hero.html" }}</header>
-  {{ .Content }}
+  <section id="home-content">{{ .Content }}</section>
 </main>
 {{ end }}

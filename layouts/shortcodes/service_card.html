@@ -1,0 +1,14 @@
+<div class="card">
+  <header>
+    {{ $img := (printf "images/%s.*" (.Get "image")) }}
+    {{ $alt := .Get "alt" }}
+    {{ with resources.GetMatch $img }}
+    <img
+      src="{{ .RelPermalink }}"
+      alt="{{ $alt }}"
+    />
+    {{ end }}
+    <h2>{{ .Get "heading" }}</h2>
+  </header>
+  <p>{{ .Get "description" }}</p>
+</div>
