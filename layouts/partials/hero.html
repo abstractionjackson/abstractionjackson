@@ -3,6 +3,7 @@
 {{ $message := default .message "Professional IT Services for Modern Business" }}
 {{ $button1 := default .button1 "Explore"}}
 {{ $button2 := default .button2 "Contact"}}
+{{ $targetSection := default .targetSection "services"}}
 <div class="hero">
   <div class="content">
     <div class="banner">
@@ -30,7 +31,7 @@
     </div>
   </div>
   <div class="scroll">
-    <a href="#services">
+    <a href="#{{ $targetSection }}">
         {{ partial "icon.html" (dict "id" "chevron-down" "alt" "Scroll Down") }}
     </a>
 </div>

@@ -46,7 +46,6 @@
         display: none;
       }
     }
-
     /* Message */
     .message {
         h1 {
@@ -85,10 +84,10 @@
 /* Scroll Indicator */
 .scroll {
   position: absolute;
-  bottom: 10px;
+  bottom: 3rem;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 18px;
+  font-size: 36px;
   cursor: pointer;
 }
 }
