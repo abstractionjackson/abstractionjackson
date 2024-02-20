@@ -6,8 +6,8 @@
 # Crafting Code and Simplifying Complexity
 
 Innovator at heart, turning complex problems into elegant solutions.  
-Freelance Software Developer at [abstractionjackson], specializing in creating delightful and performant web applications.
-- Currently building [Hydrus OMS][https://github.com/abstractionjackson/hydrus-oms], a browser-based medical outcomes tracker.
+Freelance Software Developer at [abstractionjackson](http://abstractionjackson.com), specializing in creating delightful and performant web applications.
+- Currently building [Hydrus OMS](https://github.com/abstractionjackson/hydrus-oms), a browser-based medical outcomes tracker.
 - Previously engineered solutions at AWS, automating facilities and robot fleet management.
 
 Proven track record of success as a Software Developer on contract to enterprise and startup companies, including:
