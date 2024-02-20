@@ -7,8 +7,8 @@
 
 Innovator at heart, turning complex problems into elegant solutions.  
 Freelance Software Developer at [abstractionjackson], specializing in creating delightful and performant web applications.
-- Currently building Hydrus OMS, a browser-based medical outcomes tracker.
-- Previously engineered solutions at [AWS], automating facilities and robot fleet management.
+- Currently building [Hydrus OMS][https://github.com/abstractionjackson/hydrus-oms], a browser-based medical outcomes tracker.
+- Previously engineered solutions at AWS, automating facilities and robot fleet management.
 
 Proven track record of success as a Software Developer on contract to enterprise and startup companies, including:
 - ADT, building an alarm signal processor on GCP for retail.
