@@ -1,7 +1,7 @@
 <!--
 **abstractionjackson/abstractionjackson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 -->
-# Crafting Code and Simplifying Complexity
+# Building Delightful and Intuitive Software Solutions at Scale
 
 Innovator at heart, turning complex problems into elegant solutions.  
 Freelance Software Developer at [abstractionjackson](http://abstractionjackson.com), specializing in creating delightful and performant web applications.
