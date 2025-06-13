@@ -6,8 +6,12 @@
 </head>
 
 <body>
-  {{ partial "header.html" . }}
-  {{ block "main" . }}{{ end }}
+  <header class="p-5">
+    {{ partial "header.html" . }}
+  </header>
+  <main class="px-5">
+    {{ block "main" . }}{{ end }}
+  </main>
   {{ partial "footer.html" . }}
 </body>
 

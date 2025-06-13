@@ -1,26 +1,27 @@
 {{ define "main" }}
-<main class="m-5">
-  <section>
-    {{ .Content | safeHTML }}
-  </section>
-  <section>
-    {{ $featured := first 1 (where .Site.RegularPages
-    "Params.featured" true)
-    }}
-    {{ with index $featured 0 }}
-    <article class="featured-post">
-      <header>
-        <h2 class="title is-2">
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-      </header>
-      <main class="content">
-        {{ .Content }}
-      </main>
-    </article>
-    {{ else }}
-    <p>No featured post found.</p>
-    {{ end }}
-  </section>
-</main>
+<section>
+  {{ .Content | safeHTML }}
+</section>
+<section class="mt-5">
+  {{ $featured := first 1 (where .Site.RegularPages
+  "Params.featured" true)
+  }}
+  {{ with index $featured 0 }}
+  <article class="featured-post">
+    <header class="mb-4">
+      <h2 class="title is-2 mb-3">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+      {{ $dateHuman := .Date | time.Format ":date_long" }}
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </header>
+    <main class="content">
+      {{ .Content }}
+    </main>
+  </article>
+  {{ else }}
+  <p>No featured post found.</p>
+  {{ end }}
+</section>
 {{ end }}

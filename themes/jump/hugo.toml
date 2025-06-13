@@ -2,19 +2,14 @@
 
 [menus]
   [[menus.main]]
-    name = 'Home'
-    pageRef = '/'
+    name = 'Archive'
+    pageRef = '/post'
     weight = 10
 
   [[menus.main]]
-    name = 'Posts'
-    pageRef = '/posts'
+    name = 'Portfolio'
+    pageRef = '/categories/portfolio'
     weight = 20
-
-  [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
-    weight = 30
 
 [module]
   [module.hugoVersion]
