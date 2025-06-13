@@ -1,2 +1,15 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<header class="mx-5 mt-5">
+    <nav>
+        <ul class="root-brand" style="list-style: none">
+            <li>
+                <a href="{{ .Site.BaseURL }}" class="brand-logo">
+                    {{ with resources.GetMatch
+                    "images/brand-logo.*"
+                    }}
+                    <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }} Logo" style="height: 32px; width: auto" />
+                    {{ end }}
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

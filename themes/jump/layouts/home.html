@@ -1,7 +1,26 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+<main class="m-5">
+  <section>
+    {{ .Content | safeHTML }}
+  </section>
+  <section>
+    {{ $featured := first 1 (where .Site.RegularPages
+    "Params.featured" true)
+    }}
+    {{ with index $featured 0 }}
+    <article class="featured-post">
+      <header>
+        <h2 class="title is-2">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+      </header>
+      <main class="content">
+        {{ .Content }}
+      </main>
+    </article>
+    {{ else }}
+    <p>No featured post found.</p>
+    {{ end }}
+  </section>
+</main>
 {{ end }}

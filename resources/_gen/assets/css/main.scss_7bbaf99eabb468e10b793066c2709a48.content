@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oxygen:wght@300;400;700&display=swap");
+body {
+  font-family: "Oxygen", Arial, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Text", serif; }
+
+p {
+  line-height: 1.5;
+  max-width: 700px; }
