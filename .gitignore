@@ -1,0 +1,19 @@
+# Hugo build output
+public/
+
+# OS generated files
+.DS_Store
+
+# Node modules (if used)
+node_modules/
+
+# Backup files
+*.bak
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# VS Code settings
+.vscode/

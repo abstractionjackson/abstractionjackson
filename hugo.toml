@@ -1,0 +1,4 @@
+baseURL = 'https://abstractionjackson.com/'
+languageCode = 'en-us'
+title = 'Abstraction Jackson'
+theme = 'jump'
