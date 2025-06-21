@@ -3,7 +3,7 @@ date = '2025-06-21T06:30:30-07:00'
 draft = true
 featured = false
 title = 'Self Reliance'
-categories = ['note']
+categories = ['audiobook']
 tags = ['transcendentalism']
 +++
 

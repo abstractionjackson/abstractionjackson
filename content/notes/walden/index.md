@@ -3,7 +3,7 @@ date = '2025-06-21T06:39:10-07:00'
 draft = true
 featured = false
 title = 'Walden'
-categories = ['note']
+categories = ['audiobook']
 tags = []
 +++
 

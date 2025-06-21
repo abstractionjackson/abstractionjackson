@@ -1,11 +1,6 @@
 {{ define "main" }}
 <section>
   <header>
-    <nav class="m-5" aria-label="breadcrumbs">
-      <a href="{{ .Site.BaseURL }}" class="is-link" aria-label="Back to Blog">
-        &#8592; to Blog
-      </a>
-    </nav>
     <h2 class="title is-2" style="color: #8b0031">{{ .Title }}</h2>
     {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
     {{ $dateHuman := .Date | time.Format ":date_long" }}

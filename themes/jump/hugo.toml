@@ -1,15 +1,5 @@
 
 
-[menus]
-  [[menus.main]]
-    name = 'Archive'
-    pageRef = '/post'
-    weight = 10
-
-  [[menus.main]]
-    name = 'Portfolio'
-    pageRef = '/categories/portfolio'
-    weight = 20
 
 [module]
   [module.hugoVersion]

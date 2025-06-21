@@ -1,0 +1,20 @@
+{{/*
+Renders a list of all category terms used within the current section.
+Usage: {{ partial "sectionCategories.html" . }}
+*/}}
+
+{{ $section := .Section }}
+{{ $pages := where .Site.RegularPages "Section" $section }}
+{{ $categories := slice }}
+{{ range $pages }}
+{{ range .Params.categories }}
+{{ $categories = $categories | append . }}
+{{ end }}
+{{ end }}
+{{ $uniqueCategories := $categories | uniq | sort }}
+
+<ul class="section-categories">
+    {{ range $uniqueCategories }}
+    <li><a href="/categories/{{ . | urlize }}/">{{ . }}</a></li>
+    {{ end }}
+</ul>

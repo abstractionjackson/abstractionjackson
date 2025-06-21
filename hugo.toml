@@ -7,3 +7,24 @@ theme = 'jump'
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[menus]
+  [[menus.main]]
+    name = 'Archive'
+    pageRef = '/archive'
+    weight = 10
+
+  [[menus.main]]
+    name = 'Portfolio'
+    pageRef = '/portfolio'
+    weight = 20
+
+  [[menus.main]]
+    name = 'Notes'
+    pageRef = '/notes'
+    weight = 25
+
+  [[menus.main]]
+    name = 'Sketch'
+    pageRef = '/sketch'
+    weight = 30

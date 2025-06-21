@@ -1,12 +1,22 @@
 {{ define "main" }}
 <section>
-
   <h1 class="title is-1">{{ .Name | title }}</h1>
-  {{ .Content }}
+  <div class="content">
+    {{ .Content }}
+  </div>
 </section>
 <section>
   {{ range .Pages }}
   <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   {{ end }}
+</section>
+<section class="mt-4">
+  <header>
+    <h2 class="title is-3">Categories</h2>
+    <p class="subtitle">Explore the categories in this section:</p>
+  </header>
+  <main>
+    {{ partial "sectionCategories.html" . }}
+  </main>
 </section>
 {{ end }}

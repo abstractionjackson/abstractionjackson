@@ -2,9 +2,9 @@
 date = '2025-06-12T17:12:55-07:00'
 draft = false
 featured = true
-title = 'Trial Notes on Google Notebook LM'
-categories = ['note']
-tags = ['ai', 'javascript', 'study']
+title = 'Google Notebook LM'
+categories = ['podcast']
+tags = ['ai', 'tanstack', 'javascript']
 lead = 'I put the bacon on first, into a cold pan.'
 +++
 

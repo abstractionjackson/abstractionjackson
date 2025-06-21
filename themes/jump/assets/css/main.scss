@@ -16,6 +16,7 @@ h6 {
 p {
   line-height: 1.5;
   max-width: 700px;
+  margin: 1rem 0;
 }
 
 .navbar-item.brand-logo img {
@@ -131,4 +132,9 @@ body.navbar-menu-open {
   .close-navbar-menu {
     display: none;
   }
+}
+
+body > footer {
+  width: 100%;
+  padding: 2rem 1rem;
 }
