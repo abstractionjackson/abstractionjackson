@@ -24,4 +24,111 @@ p {
 
 .navbar-menu {
   box-shadow: none !important;
+  @media (max-width: 1023px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding-top: 2rem;
+    &.is-active {
+      display: flex;
+    }
+  }
+}
+
+.navbar-menu-open {
+  overflow: hidden;
+}
+
+body.navbar-menu-open {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100vw;
+}
+
+.close-navbar-menu {
+  position: absolute;
+  top: 1.75rem;
+  right: 1.75rem;
+  z-index: 1100;
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+}
+
+.navbar-end {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+#mainNavbarMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#mainNavbarMenu ul li {
+  margin-bottom: 1.25rem;
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .navbar-menu {
+    position: static;
+    height: auto;
+    width: auto;
+    display: flex !important;
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 0;
+    justify-content: flex-end;
+  }
+  #mainNavbarMenu ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: auto;
+  }
+  #mainNavbarMenu ul li {
+    margin-bottom: 0;
+    margin-left: 1.5rem;
+    width: auto;
+    text-align: left;
+  }
+  .navbar-end {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  .close-navbar-menu {
+    display: none;
+  }
 }

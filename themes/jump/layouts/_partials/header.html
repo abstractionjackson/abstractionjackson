@@ -1,16 +1,44 @@
-<nav class="navbar is-flex is-align-items-center" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand is-flex is-align-items-center">
         <a href="{{ .Site.BaseURL }}" class="navbar-item brand-logo">
             {{ with resources.GetMatch "images/brand-logo.*" }}
             <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }} Logo" />
             {{ end }}
         </a>
+        <a role="button" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false"
+            data-target="mainNavbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
     </div>
-    <div class="navbar-menu is-active">
-        <div class="is-flex is-align-items-center">
+    <div id="mainNavbarMenu" class="navbar-menu">
+        <ul>
+            <button class="close-navbar-menu" aria-label="close menu">&times;</button>
             {{ range .Site.Menus.main }}
-            <a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a>
+            <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
             {{ end }}
-        </div>
+        </ul>
     </div>
 </nav>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var burger = document.querySelector('.navbar-burger');
+        var menu = document.getElementById('mainNavbarMenu');
+        var closeBtn = document.querySelector('.close-navbar-menu');
+        function openMenu() {
+            menu.classList.add('is-active');
+            document.body.classList.add('navbar-menu-open');
+        }
+        function closeMenu() {
+            menu.classList.remove('is-active');
+            document.body.classList.remove('navbar-menu-open');
+        }
+        burger && burger.addEventListener('click', openMenu);
+        closeBtn && closeBtn.addEventListener('click', closeMenu);
+        // Optional: close menu when clicking outside
+        menu && menu.addEventListener('click', function (e) {
+            if (e.target === menu) closeMenu();
+        });
+    });
+</script>
