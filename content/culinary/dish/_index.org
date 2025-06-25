@@ -1,0 +1,6 @@
+#+TITLE: Dish
+#+DATE: 2025-06-25T09:08:05-07:00
+#+DESCRIPTION: 
+#+DRAFT: true
+
+Instances of commestable preparation and service.

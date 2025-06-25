@@ -17,3 +17,5 @@ node_modules/
 
 # VS Code settings
 .vscode/
+
+${XDG_DATA_HOME:-$HOME
