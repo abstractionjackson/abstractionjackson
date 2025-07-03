@@ -1,1 +1,11 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="footer-content">
+    {{ with .Site.Params.social }}
+    <ul class="social-links">
+        {{ range $platform, $url := . }}
+        <li><a href="{{ $url }}" target="_blank" rel="noopener">{{ $platform }}</a></li>
+        {{ end }}
+    </ul>
+    {{ end }}
+
+    <p>Copyright {{ now.Year }}. All rights reserved.</p>
+</div>

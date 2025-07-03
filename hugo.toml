@@ -4,30 +4,43 @@ title = 'Abstraction Jackson'
 theme = 'jump'
 
 [security.exec]
-  allow = [ '^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^npx$', '^postcss$', '^tailwindcss$', '^emacs$']
+allow = [
+  '^(dart-)?sass(-embedded)?$',
+  '^go$',
+  '^git$',
+  '^npx$',
+  '^postcss$',
+  '^tailwindcss$',
+  '^emacs$',
+]
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
 [menus]
-  [[menus.main]]
-    name = 'Archive'
-    pageRef = '/archive'
-    weight = 10
+[[menus.main]]
+name = 'Archive'
+pageRef = '/archive'
+weight = 10
 
-  [[menus.main]]
-    name = 'Portfolio'
-    pageRef = '/portfolio'
-    weight = 20
+[[menus.main]]
+name = 'Portfolio'
+pageRef = '/portfolio'
+weight = 20
 
-  [[menus.main]]
-    name = 'Notes'
-    pageRef = '/note'
-    weight = 25
+[[menus.main]]
+name = 'Notes'
+pageRef = '/note'
+weight = 25
 
-  [[menus.main]]
-    name = 'Sketches'
-    pageRef = '/sketch'
-    weight = 30
+[[menus.main]]
+name = 'Sketches'
+pageRef = '/sketch'
+weight = 30
+
+[params]
+[params.social]
+GitHub = "https://github.com/abstractionjackson"
+LinkedIn = "https://linkedin.com/in/jacksongalan"

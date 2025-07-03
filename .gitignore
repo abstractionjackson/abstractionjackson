@@ -1,5 +1,6 @@
 # Hugo build output
 public/
+resources/
 
 # OS generated files
 .DS_Store
@@ -18,4 +19,3 @@ node_modules/
 # VS Code settings
 .vscode/
 
-${XDG_DATA_HOME:-$HOME
