@@ -1,6 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oxygen:wght@300;400;700&display=swap");
+html,
 body {
-  font-family: "Oxygen", Arial, sans-serif; }
+  height: 100%; }
+
+body {
+  font-family: "Oxygen", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+footer {
+  flex-shrink: 0;
+  margin-top: auto;
+  width: 100%;
+  padding: 2rem 1rem; }
 
 h1,
 h2,
@@ -16,7 +38,7 @@ p {
   margin: 1rem 0; }
 
 .navbar-item.brand-logo img {
-  max-height: 4rem; }
+  max-height: 2rem; }
 
 .navbar-menu {
   box-shadow: none !important; }
@@ -116,6 +138,31 @@ body.navbar-menu-open {
   .close-navbar-menu {
     display: none; } }
 
-body > footer {
-  width: 100%;
-  padding: 2rem 1rem; }
+.terms-list {
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0.5rem 0 0 0;
+  padding: 0; }
+
+.terms-list li {
+  margin: 0; }
+
+.term-link {
+  color: #3273dc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s; }
+
+.term-link:hover {
+  color: #205493;
+  text-decoration: underline; }
+
+.tags-list .term-link {
+  color: #8b0031;
+  text-decoration: none; }
+
+.tags-list .term-link:hover {
+  color: #b3004b;
+  text-decoration: underline; }

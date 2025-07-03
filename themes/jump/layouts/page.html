@@ -1,16 +1,19 @@
 {{ define "main" }}
 <section>
-  <header>
-    <h2 class="title is-2" style="color: #8b0031">{{ .Title }}</h2>
-    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-    {{ $dateHuman := .Date | time.Format ":date_long" }}
-    <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-  </header>
-  <main class="py-5 content">
-    {{ .Content }}
-  </main>
-  <footer>
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-  </footer>
+    <header class="mb-4">
+        <h2 class="title is-2" style="color: #8b0031">{{ .Title }}</h2>
+        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := .Date | time.Format ":date_long" }}
+        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        <div class="category-link">
+            {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+        </div>
+        <div class="tags-list">
+            {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
+    </header>
+    <main class="px-0 content">
+        {{ .Content }}
+    </main>
 </section>
 {{ end }}

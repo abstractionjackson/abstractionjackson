@@ -1,7 +1,7 @@
 +++
 date = '2025-06-12T17:12:55-07:00'
 draft = false
-featured = true
+featured = false
 title = 'Google Notebook LM'
 categories = ['podcast']
 tags = ['ai', 'tanstack', 'javascript']

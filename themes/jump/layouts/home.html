@@ -2,7 +2,11 @@
 <section>
   {{ .Content | safeHTML }}
 </section>
-<section class="mt-5">
+<section class="mt-5 pt-5">
+  <header class='mb-4' style="display: flex; align-items: center;">
+    <span style="color:gold; font-size:1.2em; vertical-align:middle;">&#11088;</span>
+    <span style="letter-spacing:2px; font-weight:bold; margin-left: 0.5em;">FEATURED</span>
+  </header>
   {{ partial "featuredPost.html" . }}
 </section>
 {{ end }}

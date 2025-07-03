@@ -2,4 +2,4 @@
 name = 'Home'
 +++
 
-'Posts from San Francisco Software Engineer <a href="https://github.com/abstractionjackson" target="_blank" rel="noopener">@abstractionjackson</a>, about web development for <a href="https://goldengatesoftwaresolutions.com" target="_blank" rel="noopener">Golden Gate Software Solutions</a>, digital technology, personal projects, and more.'
+San Francisco Software Engineer <a href="https://github.com/abstractionjackson" target="_blank" rel="noopener">@abstractionjackson</a>, posts on web development for <a href="https://goldengatesoftwaresolutions.com" target="_blank" rel="noopener">Golden Gate Software Solutions</a>. Here you'll find as well [notes](/note) on technology, art, books, culture, &c.

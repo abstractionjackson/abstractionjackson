@@ -1,5 +1,5 @@
 {{ $featured := first 1 (where .Site.RegularPages
-"Params.featured" true)
+"Params.featured" "t")
 }}
 {{ with index $featured 0 }}
 <article class="featured-post">
@@ -10,6 +10,12 @@
         {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
         {{ $dateHuman := .Date | time.Format ":date_long" }}
         <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        <div class="category-link">
+            {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+        </div>
+        <div class="tags-list">
+            {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        </div>
     </header>
     <main class="content">
         {{ .Content }}

@@ -28,6 +28,6 @@ theme = 'jump'
     weight = 25
 
   [[menus.main]]
-    name = 'Sketch'
+    name = 'Sketches'
     pageRef = '/sketch'
     weight = 30
