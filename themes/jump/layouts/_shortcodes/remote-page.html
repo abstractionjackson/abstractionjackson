@@ -1,0 +1,14 @@
+{{ $url := .Get 0 }}
+{{ with try (resources.GetRemote $url) }}
+{{ $content := .Value.Content }}
+{{ $page := site.GetPage "/" }}
+{{ $markup := "org" }}
+{{ $opts := dict "markup" $markup }}
+{{ $processed := $content | $page.RenderString $opts }}
+
+<div class="remote-content">
+    {{ $processed }}
+</div>
+{{ else }}
+<p>Error fetching content from {{ $url }}</p>
+{{ end }}
