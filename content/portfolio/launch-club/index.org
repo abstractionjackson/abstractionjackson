@@ -11,7 +11,7 @@
 
 ** Payments and Scheduling Services to Improve UI/UX
 
-[[https://launchclubgolf.com][launchclubgolf.com]] is home online to the Minneapolis golf simulator that shares its name. Managed via WordPress CMS, the site features not only promotional and informational content, but interactive e-commerce integrations for scheduling and payments. I joined the project in 2024 to help business owner Jason Gillis implement these features, and the result was improved User Experience (UX) and increased customer traffic.
+[[https://launchclubgolf.com][launchclubgolf.com]] is home online to the Minneapolis golf simulator that shares its name. Managed via WordPress CMS, the site features not only promotional and informational content, but interactive e-commerce integrations for scheduling and payments, as well. I joined the project in 2024 to help business owner [[https://www.linkedin.com/in/jason-gillis-b385522a0/][Jason Gillis]] implement these features, and the result was immediately apparent. In the first 30 days, the improved User Experience (UX) led to a 27% page-view increase, according to WordPress analytics.
 
 #+begin_quote
 ...[Jackson] added to my vision with creative solutions
