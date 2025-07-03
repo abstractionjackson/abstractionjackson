@@ -166,3 +166,6 @@ body.navbar-menu-open {
 .tags-list .term-link:hover {
   color: #b3004b;
   text-decoration: underline; }
+
+blockquote {
+  margin-bottom: 1.5rem; }
