@@ -11,6 +11,7 @@
         <div class="tags-list">
             {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
         </div>
+        {{ partial "github-repo-link.html" . }}
     </header>
     <main class="px-0 content">
         {{ .Content }}

@@ -1,8 +1,7 @@
-#+date: 2025-06-13T14:55:36-07:00
-#+draft: false
-#+featured: nil
+#+date: 2025-07-04T10:20:37-07:00
+#+draft: true
+#+featured: false
 #+title: The Good Life
-#+categories[]: mobile
-#+tags[]: expo react-native sqlite
-
-{{< remote-page "https://raw.githubusercontent.com/abstractionjackson/good-life/refs/heads/master/README.org" >}}
+#+categories[]: 
+#+tags[]: 
+#+repo: https://github.com/abstractionjackson/good-life
