@@ -1,0 +1,28 @@
+<table class="table is-fullwidth is-striped">
+    <thead>
+        <tr>
+            <th>Time</th>
+            <th>Summary</th>
+            <th>Rating</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range . }}
+        <tr>
+            <td>
+                <p>
+                    {{ (time .Params.performedAt).Format "3:04pm" }}
+                </p>
+            </td>
+            <td>
+                <a href="{{ .RelPermalink }}">{{ .Summary }}</a>
+            </td>
+            <td>
+                <p>
+                    {{ .Params.rating | default "—" }}
+                </p>
+            </td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

@@ -9,12 +9,14 @@
   {{ $pages := .Pages }}
   {{ if eq .Parent.Name "Activity"}}
   {{ $pages = $pages.ByParam "performedAt" }}
-  {{ end }}
+  {{ partial "activitiesTable.html" $pages }}
+  {{ else }}
   {{ range $pages }}
   <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   <div class="content">
     {{ .Summary }}
   </div>
+  {{ end }}
   {{ end }}
 </section>
 <section class="mt-4">
