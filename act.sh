@@ -4,6 +4,7 @@
 current_date=$(date '+%Y-%m-%d')
 current_time=$(date '+%H:%M:%S')
 timezone=$(date '+%z')
+open_in_emacs=false
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]; do
@@ -25,10 +26,15 @@ while [[ $# -gt 0 ]]; do
             fi
             shift 2
             ;;
+        -e|--emacs)
+            open_in_emacs=true
+            shift
+            ;;
         -h|--help)
-            echo "Usage: $0 [-d|--date YYYY-MM-DD] [-t|--time HHMM|HH:MM:SS]"
+            echo "Usage: $0 [-d|--date YYYY-MM-DD] [-t|--time HHMM|HH:MM:SS] [-e|--emacs]"
             echo "  -d, --date    Date in YYYY-MM-DD format (default: current date)"
             echo "  -t, --time    Time in HHMM (military) or HH:MM:SS format (default: current time)"
+            echo "  -e, --emacs   Open the created file in Emacs"
             echo "  -h, --help    Show this help message"
             echo ""
             echo "Examples:"
@@ -84,3 +90,14 @@ echo "Created new activity content at: ${content_path}"
 echo "Date: ${current_date}"
 echo "Time: ${current_time}"
 echo "Full datetime: ${current_datetime}"
+
+# Open in Emacs if requested
+if [ "$open_in_emacs" = true ]; then
+    content_file="$(cd "$(dirname "$0")" && pwd)/content/${content_path}/index.org"
+    if [ -f "$content_file" ]; then
+        echo "Opening file in Emacs: ${content_file}"
+        emacs "$content_file" &
+    else
+        echo "Warning: Created file not found at ${content_file}"
+    fi
+fi
