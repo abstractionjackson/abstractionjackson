@@ -13,14 +13,28 @@ while [[ $# -gt 0 ]]; do
             shift 2
             ;;
         -t|--time)
-            current_time="$2"
+            # Convert military time (HHMM) to HH:MM:SS format
+            if [[ "$2" =~ ^[0-9]{4}$ ]]; then
+                # Extract hours and minutes from HHMM format
+                hours="${2:0:2}"
+                minutes="${2:2:2}"
+                current_time="${hours}:${minutes}:00"
+            else
+                # Assume it's already in HH:MM:SS format
+                current_time="$2"
+            fi
             shift 2
             ;;
         -h|--help)
-            echo "Usage: $0 [-d|--date YYYY-MM-DD] [-t|--time HH:MM:SS]"
+            echo "Usage: $0 [-d|--date YYYY-MM-DD] [-t|--time HHMM|HH:MM:SS]"
             echo "  -d, --date    Date in YYYY-MM-DD format (default: current date)"
-            echo "  -t, --time    Time in HH:MM:SS format (default: current time)"
+            echo "  -t, --time    Time in HHMM (military) or HH:MM:SS format (default: current time)"
             echo "  -h, --help    Show this help message"
+            echo ""
+            echo "Examples:"
+            echo "  $0 -t 0900        # 09:00:00"
+            echo "  $0 -t 1430        # 14:30:00"
+            echo "  $0 -t 09:30:45    # 09:30:45"
             exit 0
             ;;
         *)
@@ -39,7 +53,7 @@ fi
 
 # Validate time format
 if ! date -j -f "%H:%M:%S" "$current_time" >/dev/null 2>&1; then
-    echo "Error: Invalid time format. Use HH:MM:SS"
+    echo "Error: Invalid time format. Use HHMM (military) or HH:MM:SS"
     exit 1
 fi
 
