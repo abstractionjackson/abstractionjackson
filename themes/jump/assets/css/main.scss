@@ -268,3 +268,62 @@ blockquote {
     transition: background-color 0.2s ease;
   }
 }
+
+// Activities Table Filter Styles
+.activities-table-container {
+  .table-controls {
+    display: flex;
+    justify-content: flex-end;
+
+    .filter-dropdown {
+      position: relative;
+      display: inline-block;
+
+      .filter-menu {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        min-width: 200px;
+        background: white;
+        border: 1px solid #dbdbdb;
+        border-radius: 4px;
+        box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
+        z-index: 1000;
+
+        .filter-menu-content {
+          padding: 1rem;
+
+          .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #f0f0f0;
+          }
+
+          .filter-tags {
+            max-height: 200px;
+            overflow-y: auto;
+
+            .field {
+              margin-bottom: 0.5rem;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .checkbox {
+                font-size: 0.875rem;
+
+                input[type="checkbox"] {
+                  margin-right: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

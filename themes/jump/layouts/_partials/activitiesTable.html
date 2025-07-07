@@ -1,32 +1,57 @@
-<table class="table is-fullwidth is-striped" id="activitiesTable" data-default-sort="performedAt">
-    <thead>
-        <tr>
-            <th class="sortable" data-sort="performedAt">
-                Time
-            </th>
-            <th>Summary</th>
-            <th class="sortable" data-sort="rating">
-                Rating
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        {{ range . }}
-        <tr data-performed-at="{{ .Params.performedAt }}" data-rating="{{ .Params.rating | default 0 }}">
-            <td>
-                <p>
-                    {{ (time .Params.performedAt).Format "3:04pm" }}
-                </p>
-            </td>
-            <td>
-                <a href="{{ .RelPermalink }}">{{ .Summary }}</a>
-            </td>
-            <td>
-                <p>
-                    {{ .Params.rating | default "—" }}
-                </p>
-            </td>
-        </tr>
-        {{ end }}
-    </tbody>
-</table>
+<div class="activities-table-container">
+    <div class="table-controls mb-3">
+        <div class="filter-dropdown">
+            <button class="button is-small" id="filterToggle">
+                <span>Filter by Tags</span>
+                <span class="icon">
+                    <i>▼</i>
+                </span>
+            </button>
+            <div class="filter-menu" id="filterMenu" style="display: none;">
+                <div class="filter-menu-content">
+                    <div class="filter-header">
+                        <strong>Select Tags</strong>
+                        <button class="button is-small is-light" id="clearFilters">Clear All</button>
+                    </div>
+                    <div class="filter-tags" id="filterTags">
+                        <!-- Tags will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table class="table is-fullwidth is-striped" id="activitiesTable" data-default-sort="performedAt">
+        <thead>
+            <tr>
+                <th class="sortable" data-sort="performedAt">
+                    Time
+                </th>
+                <th>Summary</th>
+                <th class="sortable" data-sort="rating">
+                    Rating
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ range . }}
+            <tr data-performed-at="{{ .Params.performedAt }}" data-rating="{{ .Params.rating | default 0 }}"
+                data-tags="{{ delimit .Params.tags " ," }}">
+                <td>
+                    <p>
+                        {{ (time .Params.performedAt).Format "3:04pm" }}
+                    </p>
+                </td>
+                <td>
+                    <a href="{{ .RelPermalink }}">{{ .Summary }}</a>
+                </td>
+                <td>
+                    <p>
+                        {{ .Params.rating | default "—" }}
+                    </p>
+                </td>
+            </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>
