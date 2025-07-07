@@ -1,14 +1,18 @@
-<table class="table is-fullwidth is-striped">
+<table class="table is-fullwidth is-striped" id="activitiesTable" data-default-sort="performedAt">
     <thead>
         <tr>
-            <th>Time</th>
+            <th class="sortable" data-sort="performedAt">
+                Time
+            </th>
             <th>Summary</th>
-            <th>Rating</th>
+            <th class="sortable" data-sort="rating">
+                Rating
+            </th>
         </tr>
     </thead>
     <tbody>
         {{ range . }}
-        <tr>
+        <tr data-performed-at="{{ .Params.performedAt }}" data-rating="{{ .Params.rating | default 0 }}">
             <td>
                 <p>
                     {{ (time .Params.performedAt).Format "3:04pm" }}

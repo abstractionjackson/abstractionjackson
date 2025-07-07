@@ -8,7 +8,6 @@
 <section>
   {{ $pages := .Pages }}
   {{ if eq .Parent.Name "Activity"}}
-  {{ $pages = $pages.ByParam "performedAt" }}
   {{ partial "activitiesTable.html" $pages }}
   {{ else }}
   {{ range $pages }}
