@@ -12,9 +12,8 @@
             <span aria-hidden="true"></span>
         </a>
     </div>
-    <div id="mainNavbarMenu" class="navbar-menu">
-        <ul>
-            <button class="close-navbar-menu" aria-label="close menu">&times;</button>
+    <div id="mainNavbarMenu" class="navbar-menu" style="box-shadow: none !important;">
+        <ul id="mainNavbarMenuList" class="navbar-end">
             {{ range .Site.Menus.main }}
             <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
             {{ end }}
@@ -25,20 +24,23 @@
     document.addEventListener('DOMContentLoaded', function () {
         var burger = document.querySelector('.navbar-burger');
         var menu = document.getElementById('mainNavbarMenu');
-        var closeBtn = document.querySelector('.close-navbar-menu');
-        function openMenu() {
-            menu.classList.add('is-active');
-            document.body.classList.add('navbar-menu-open');
+
+        function toggleMenu() {
+            menu.classList.toggle('is-active');
+            burger.classList.toggle('is-active');
         }
-        function closeMenu() {
-            menu.classList.remove('is-active');
-            document.body.classList.remove('navbar-menu-open');
-        }
-        burger && burger.addEventListener('click', openMenu);
-        closeBtn && closeBtn.addEventListener('click', closeMenu);
-        // Optional: close menu when clicking outside
-        menu && menu.addEventListener('click', function (e) {
-            if (e.target === menu) closeMenu();
+
+        burger && burger.addEventListener('click', toggleMenu);
+
+        // Close menu when clicking on a menu item (mobile)
+        var menuLinks = menu.querySelectorAll('a');
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 1024) {
+                    menu.classList.remove('is-active');
+                    burger.classList.remove('is-active');
+                }
+            });
         });
     });
 </script>

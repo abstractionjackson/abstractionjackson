@@ -49,22 +49,18 @@ p {
 }
 
 .navbar-menu {
-  box-shadow: none !important;
   @media (max-width: 1023px) {
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 100%;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
     background: white;
     z-index: 1000;
     display: none;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
-    padding-top: 2rem;
+    padding: 0;
+    border: none;
     &.is-active {
-      display: flex;
+      display: block;
     }
   }
 }
@@ -74,87 +70,87 @@ p {
 }
 
 body.navbar-menu-open {
-  overflow: hidden;
-  height: 100vh;
-  position: fixed;
-  width: 100vw;
+  overflow: visible;
 }
 
 .close-navbar-menu {
-  position: absolute;
-  top: 1.75rem;
-  right: 1.75rem;
-  z-index: 1100;
-  background: none;
-  border: none;
-  box-shadow: none;
-  font-size: 2.5rem;
-  cursor: pointer;
-  line-height: 1;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 1rem;
+  display: none;
 }
 
 .navbar-end {
   flex-direction: column;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 0;
 }
 
 #mainNavbarMenu ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
   width: 100%;
-  height: 100vh;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 #mainNavbarMenu ul li {
-  margin-bottom: 1.25rem;
-  margin-left: 0;
+  margin: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
+}
+#mainNavbarMenu ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  &:last-child {
+    border-bottom: none;
+  }
 }
 @media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .navbar-menu {
     position: static;
-    height: auto;
-    width: auto;
     display: flex !important;
     background: none;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 0;
-    justify-content: flex-end;
+    box-shadow: none !important;
+    padding: 0;
+    margin-left: auto;
+  }
+  #mainNavbarMenu {
+    display: flex;
+    width: auto;
   }
   #mainNavbarMenu ul {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    width: 100%;
+    width: auto;
     height: auto;
+    margin: 0;
+    padding: 0;
   }
   #mainNavbarMenu ul li {
-    margin-bottom: 0;
-    margin-left: 1.5rem;
+    margin: 0 0 0 1.5rem;
     width: auto;
     text-align: left;
+  }
+  #mainNavbarMenu ul li a {
+    padding: 0.5rem 0;
+    border-bottom: none;
   }
   .navbar-end {
     flex-direction: row;
     align-items: center;
     padding: 0;
     justify-content: flex-end;
-    width: 100%;
+    width: auto;
   }
-  .close-navbar-menu {
+  .navbar-burger {
     display: none;
   }
 }

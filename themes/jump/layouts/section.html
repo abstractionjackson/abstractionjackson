@@ -7,7 +7,11 @@
 </section>
 <section>
   {{ range .Pages }}
-  <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+  {{ $title := .LinkTitle }}
+  <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ $title }}</a></h2>
+  <div class="content">
+    {{ .Summary }}
+  </div>
   {{ end }}
 </section>
 <section class="mt-4">
