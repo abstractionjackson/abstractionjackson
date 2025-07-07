@@ -6,9 +6,12 @@
   </div>
 </section>
 <section>
-  {{ range .Pages }}
-  {{ $title := .LinkTitle }}
-  <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ $title }}</a></h2>
+  {{ $pages := .Pages }}
+  {{ if eq .Parent.Name "Activity"}}
+  {{ $pages = $pages.ByParam "performedAt" }}
+  {{ end }}
+  {{ range $pages }}
+  <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   <div class="content">
     {{ .Summary }}
   </div>
