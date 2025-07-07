@@ -69,16 +69,9 @@ current_datetime="${current_date}T${current_time}${timezone}"
 # Create the date-level directory structure if it doesn't exist
 date_index_path="content/activity/${current_date}/_index.org"
 if [ ! -f "${date_index_path}" ]; then
-    # Create the directory
-    mkdir -p "content/activity/${current_date}"
-    
-    # Create _index.org for the date level
-    cat > "${date_index_path}" << EOF
-#+TITLE: ${current_date}
-#+DATE: ${current_datetime}
-#+DESCRIPTION: Activities for $(date -j -f "%Y-%m-%d" "$current_date" "+%B %d, %Y")
-#+DRAFT: true
-EOF
+    # Use Hugo to create the date section using the activity-entry bundle archetype
+    date_section_path="activity/${current_date}"
+    hugo new "${date_section_path}" --kind activity-entry
     echo "Created date section at: activity/${current_date}/_index.org"
 fi
 

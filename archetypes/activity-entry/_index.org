@@ -1,0 +1,5 @@
+#+TITLE: {{ .Date | dateFormat "2006-01-02" }}
+#+DATE: {{ .Date }}
+#+DESCRIPTION: Activities for {{ .Date | dateFormat "January 2, 2006" }}
+#+DRAFT: true
+#+RATING: 3
