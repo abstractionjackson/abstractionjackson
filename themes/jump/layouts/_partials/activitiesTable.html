@@ -35,6 +35,8 @@
         </thead>
         <tbody>
             {{ range . }}
+            {{/* the if condition is a patch on some nil values, and should be fixed */}}
+            {{ if .Params.performedAt }}
             <tr data-performed-at="{{ .Params.performedAt }}" data-rating="{{ .Params.rating | default 0 }}"
                 data-tags="{{ delimit .Params.tags " ," }}">
                 <td>
@@ -47,10 +49,12 @@
                 </td>
                 <td>
                     <p>
-                        {{ .Params.rating | default "—" }}
+                        {{ partial "ratingIndicator.html" (.Params.rating | default 0) }}
                     </p>
                 </td>
             </tr>
+            {{ end }}
+
             {{ end }}
         </tbody>
     </table>

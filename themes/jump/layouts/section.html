@@ -1,24 +1,16 @@
 {{ define "main" }}
 <section>
-  {{ if eq .Parent.Name "Activity" }}
-  <h1 class="title is-1">{{ (time .Date).Format "January 2, 2006" }}</h1>
-  {{ else }}
   <h1 class="title is-1">{{ .Name | title }}</h1>
-  {{ end }}
   <div class="content">
     {{ .Content }}
   </div>
 </section>
 <section>
-  {{ if eq .Parent.Name "Activity"}}
-  {{ partial "activitiesTable.html" .Pages }}
-  {{ else }}
   {{ range .Pages }}
   <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
   <div class="content">
     {{ .Summary }}
   </div>
-  {{ end }}
   {{ end }}
 </section>
 <section class="mt-4">

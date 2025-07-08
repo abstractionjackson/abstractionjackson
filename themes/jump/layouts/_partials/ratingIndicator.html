@@ -1,0 +1,28 @@
+{{ $rating := . | int }}
+{{ $color := "" }}
+{{ $bgColor := "" }}
+
+{{ if eq $rating -2 }}
+{{ $bgColor = "#000000" }}
+{{ $color = "#ffffff" }}
+{{ else if eq $rating -1 }}
+{{ $bgColor = "#4a4a4a" }}
+{{ $color = "#ffffff" }}
+{{ else if eq $rating 0 }}
+{{ $bgColor = "#808080" }}
+{{ $color = "#ffffff" }}
+{{ else if eq $rating 1 }}
+{{ $bgColor = "#c0c0c0" }}
+{{ $color = "#000000" }}
+{{ else if eq $rating 2 }}
+{{ $bgColor = "#ffffff" }}
+{{ $color = "#000000" }}
+{{ else }}
+{{ $bgColor = "#f0f0f0" }}
+{{ $color = "#999999" }}
+{{ end }}
+
+<div class="rating-indicator" style="background-color: {{ $bgColor }}; color: {{ $color }};"
+    title="Rating: {{ $rating }}">
+    <span class="rating-value">{{ $rating }}</span>
+</div>
