@@ -2,6 +2,9 @@
 public/
 resources/
 
+# Private content
+content/activity/
+
 # OS generated files
 .DS_Store
 
