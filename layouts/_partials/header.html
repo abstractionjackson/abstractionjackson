@@ -5,21 +5,22 @@
             <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }} Logo" />
             {{ end }}
         </a>
-        <a role="button" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false"
+        {{/* <a role="button" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false"
             data-target="mainNavbarMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-        </a>
+        </a> */}}
     </div>
-    <div id="mainNavbarMenu" class="navbar-menu" style="box-shadow: none !important;">
+    {{/* <div id="mainNavbarMenu" class="navbar-menu" style="box-shadow: none !important;">
         <ul id="mainNavbarMenuList" class="navbar-end">
             {{ range .Site.Menus.main }}
             <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
             {{ end }}
         </ul>
-    </div>
+    </div> */}}
 </nav>
+{{/*
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var burger = document.querySelector('.navbar-burger');
@@ -43,4 +44,4 @@
             });
         });
     });
-</script>
+</script> */}}

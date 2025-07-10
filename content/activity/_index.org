@@ -1,2 +1,0 @@
-#+NAME: Activity
-#+TITLE: Activity

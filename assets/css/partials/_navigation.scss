@@ -1,0 +1,120 @@
+// Navigation and header styles
+
+.navbar {
+  padding: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.navbar-item.brand-logo img {
+  max-height: 2rem;
+}
+
+.navbar-menu {
+  @media (max-width: 1023px) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    display: none;
+    padding: 0;
+    border: none;
+    &.is-active {
+      display: block;
+    }
+  }
+}
+
+.navbar-menu-open {
+  overflow: hidden;
+}
+
+body.navbar-menu-open {
+  overflow: visible;
+}
+
+.close-navbar-menu {
+  display: none;
+}
+
+.navbar-end {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+
+#mainNavbarMenu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#mainNavbarMenu ul li {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+#mainNavbarMenu ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-menu {
+    position: static;
+    display: flex !important;
+    background: none;
+    box-shadow: none !important;
+    padding: 0;
+    margin-left: auto;
+  }
+  #mainNavbarMenu {
+    display: flex;
+    width: auto;
+  }
+  #mainNavbarMenu ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  #mainNavbarMenu ul li {
+    margin: 0 0 0 1.5rem;
+    width: auto;
+    text-align: left;
+  }
+  #mainNavbarMenu ul li a {
+    padding: 0.5rem 0;
+    border-bottom: none;
+  }
+  .navbar-end {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    justify-content: flex-end;
+    width: auto;
+  }
+  .navbar-burger {
+    display: none;
+  }
+}

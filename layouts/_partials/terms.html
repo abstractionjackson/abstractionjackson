@@ -14,8 +14,9 @@ For a given taxonomy, renders a list of terms assigned to the page.
 <ul class="terms-list {{ if eq $taxonomy " categories" }}categories-list{{ else if eq $taxonomy "tags" }}tags-list{{ end
   }}">
   {{- range . }}
-  <li><a href="{{ .RelPermalink }}" class="term-link {{ if eq $taxonomy " tags" }}is-secondary{{ end }}">{{ .LinkTitle
-      }}</a></li>
+  {{- $displayTitle := title (replace .LinkTitle "_" " ") }}
+  <li><a href="{{ .RelPermalink }}" class="term-link {{ if eq $taxonomy " tags" }}is-secondary{{ end }}">{{
+      $displayTitle }}</a></li>
   {{- end }}
 </ul>
 {{- end }}

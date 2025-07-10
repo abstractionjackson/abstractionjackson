@@ -1,0 +1,47 @@
+// Base typography and layout styles
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oxygen:wght@300;400;700&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Oxygen", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  > header,
+  > main {
+    width: 100%;
+  }
+  > main {
+    padding: 0 1rem;
+  }
+  > footer {
+    flex-shrink: 0;
+    margin-top: auto;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Crimson Text", serif;
+}
+
+p {
+  line-height: 1.5;
+  margin: 1rem 0;
+}
+
+blockquote {
+  margin-bottom: 1.5rem;
+}

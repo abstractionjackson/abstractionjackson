@@ -2,9 +2,9 @@
 
 ## Hugo Site Structure
 
-This is a Hugo static site using the "jump" theme located in `themes/jump/`.
-Styles should be added to the theme in `themes/jump/assets/css/main.scss`.
-Layouts should be added to the theme in `themes/jump/layouts/`, unless explicitly specified otherwise. This includes partials and shortcodes.
+This is a Hugo static site without a theme.
+Styles are located in `assets/css/` with the main file at `assets/css/main.scss` and partials in `assets/css/partials/`.
+Layouts are located in `layouts/` and include partials and shortcodes.
 Content appears at the site level in `content/` and is organized by section.
 
 ## GitHub Repository Link Feature
@@ -25,3 +25,15 @@ Content front matter can include a `repo` parameter to display GitHub repository
 - Notes in `content/note/`
 - Sketches in `content/sketch/`
 - Culinary content in `content/culinary/`
+
+## Activity Data Structure
+
+Activity data has been migrated from org-mode files to JSON format in `data/activity/`:
+
+- **JSON Data**: One file per date (`YYYY-MM-DD.json`) containing all activity entries
+- **Schemas**: Located in `data/` directory:
+  - `activity-date.schema.json` - Schema for date objects with date, rating, and entries array
+  - `activity-entry.schema.json` - Schema for individual activity entries with date, draft, title, performedAt, rating, tags, and content fields
+- **Documentation**: `data/README.md` contains full documentation of the data structure
+
+When working with activity data, reference these schemas to understand the expected structure and validation rules.

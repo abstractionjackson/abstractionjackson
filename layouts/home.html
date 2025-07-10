@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div id="home">
+  {{/* <section id="home-content">
+    {{ .Content | safeHTML }}
+  </section> */}}
+  <section id="home-featured-post">
+    <header>
+      <span class="badge">FEATURE</span>
+    </header>
+    <main>
+      {{ partial "featuredPost.html" . }}
+    </main>
+  </section>
+</div>
+{{ end }}

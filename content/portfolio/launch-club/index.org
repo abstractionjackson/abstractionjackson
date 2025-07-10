@@ -1,8 +1,8 @@
 #+date: 2025-06-13T14:55:36-07:00
 #+draft: false
 #+featured: t
-#+title: Launch Club Golf
-#+categories[]: design
+#+title: Building a Pixel-Perfect E-Commerce Site with Registration and Booking Integrations
+#+categories[]: web_design
 #+tags[]: wordpress gymmaster e-commerce
 
 {{< figure src="images/landing.png" alt="a screen capture of the Launch Club Golf website landing on desktop" caption="Landing Page: Desktop Layout" >}}

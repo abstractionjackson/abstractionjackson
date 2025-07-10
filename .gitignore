@@ -4,6 +4,7 @@ resources/
 
 # Private content
 content/activity/
+data/activity
 
 # OS generated files
 .DS_Store

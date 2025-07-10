@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# post.sh - A script to create new content in a Hugo site and open it in Emacs
+
 # Get the desired relative content path from the first argument
 content_path_relative="$1"
 

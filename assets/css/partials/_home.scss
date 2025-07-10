@@ -1,0 +1,20 @@
+#home {
+  #home-content > p {
+    max-width: 500px;
+    margin-left: auto;
+    text-align: right;
+  }
+  #home-featured-post {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 1rem 0 0 0;
+    > header {
+      margin: 0 0 1rem 0;
+    }
+  }
+  .badge {
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
