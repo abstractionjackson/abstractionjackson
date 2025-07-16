@@ -3,6 +3,8 @@
 // Set your brand colors
 $red: hsl(338.85deg 100% 27.25%);
 $navy: hsl(220deg 100% 20%);
+$ultramarine: hsl(220deg 100% 40%);
+$theYellowWallpaper: hsl(50deg 100% 90%);
 
 @use "bulma/sass" with (
   $family-primary: font.$family-primary,
@@ -10,11 +12,17 @@ $navy: hsl(220deg 100% 20%);
   $title-family: font.$family-secondary,
   $primary: $red,
   $link: $navy,
+  $info: $ultramarine,
+  $warning: $theYellowWallpaper,
   $control-border-width: 2px,
   $input-shadow: none
 );
 
-.hero.is-dark a {
+.hero.is-dark a,
+.hero.is-black a {
   color: #f3f4f6;
   text-decoration: underline;
+  &.tag {
+    text-decoration: none;
+  }
 }

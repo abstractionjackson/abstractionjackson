@@ -9,12 +9,18 @@ For a given taxonomy, renders a list of terms assigned to the page.
 
 {{- $page := .page }}
 {{- $taxonomy := .taxonomy }}
+{{- $color := "is-warning"}}
+
+{{- if eq $taxonomy "categories" }}
+{{- $color = "is-success" }}
+{{- end }}
 
 {{- with $page.GetTerms $taxonomy }}
 <ul class="is-flex terms">
   {{- range . }}
   {{- $displayTitle := title (replace .LinkTitle "_" " ") }}
-  <li><a class="has-text-weight-light" href="{{ .RelPermalink }}">{{ $displayTitle }}</a></li>
+  <li><a class="tag is-light {{ $color }}" href="{{ .RelPermalink }}">{{ $displayTitle }}</a>
+  </li>
   {{- end }}
 </ul>
 {{- end }}

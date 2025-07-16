@@ -1,19 +1,21 @@
 {{ define "main" }}
 <header class="hero is-light">
     <hgroup class="hero-body">
-        <h2 class="title is-2 has-text-primary is-family-primary">{{ .Title }}</h2>
+        <h2 class="title is-2 is-family-primary">{{ .Title }}</h2>
         <p class="subtitle">
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
             {{ $dateHuman := .Date | time.Format ":date_long" }}
             <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
         </p>
-        <div class="mb-4">
+        <div class="block">
             {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
         </div>
-        <div>
+        <div class="block">
             {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
         </div>
-        {{ partial "github-repo-link.html" . }}
+        <div class="block">
+            {{ partial "github-repo-link.html" . }}
+        </div>
     </hgroup>
 </header>
 <main class="section content">

@@ -1,3 +1,7 @@
+.hero-body-max-width {
+  max-width: 800px;
+}
+
 .terms {
   gap: 1rem;
 }
@@ -27,4 +31,8 @@
   img {
     object-fit: cover;
   }
+}
+
+body > footer {
+  margin-top: auto;
 }
