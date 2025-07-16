@@ -4,7 +4,7 @@
 $red: hsl(338.85deg 100% 27.25%);
 $navy: hsl(220deg 100% 20%);
 
-@use "bulma/sass/index" with (
+@use "bulma/sass" with (
   $family-primary: font.$family-primary,
   $family-secondary: font.$family-secondary,
   $title-family: font.$family-secondary,
@@ -13,3 +13,8 @@ $navy: hsl(220deg 100% 20%);
   $control-border-width: 2px,
   $input-shadow: none
 );
+
+.hero.is-dark a {
+  color: #f3f4f6;
+  text-decoration: underline;
+}
