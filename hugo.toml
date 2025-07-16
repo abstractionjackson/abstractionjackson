@@ -22,22 +22,22 @@ unsafe = true
 [[menus.main]]
 name = 'Archive'
 pageRef = '/archive'
-weight = 10
+weight = 30
 
 [[menus.main]]
 name = 'Portfolio'
 pageRef = '/portfolio'
-weight = 20
+weight = 10
 
 [[menus.main]]
 name = 'Notes'
 pageRef = '/note'
-weight = 25
+weight = 15
 
-[[menus.main]]
-name = 'Sketches'
-pageRef = '/sketch'
-weight = 30
+# [[menus.main]]
+# name = 'Sketches'
+# pageRef = '/sketch'
+# weight = 99
 
 [params]
 [params.social]

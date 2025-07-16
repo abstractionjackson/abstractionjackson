@@ -1,6 +1,4 @@
-// Import all partials
-@import "partials/base";
-@import "partials/navigation";
-@import "partials/components";
-@import "partials/github-repo";
-@import "partials/home";
+@use "partials/font";
+@use "partials/bulma";
+@use "partials/base";
+@use "partials/components";

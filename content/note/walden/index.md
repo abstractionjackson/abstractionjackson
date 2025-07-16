@@ -5,11 +5,8 @@ featured = false
 title = 'Walden'
 categories = ['audiobook']
 tags = []
+summary = 'American author writes on his experience of building a domicile on the edge of a rural pond.'
 +++
-
-# Walden
-
-Author: Thoreau
 
 ## Part 1
 

@@ -1,24 +1,26 @@
 {{ define "main" }}
-<section>
-  <h1 class="title is-1">{{ .Name | title }}</h1>
-  <div class="content">
-    {{ .Content }}
-  </div>
-</section>
-<section>
-  {{ range .Pages }}
-  <h2 class="title is-2"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  <div class="content">
-    {{ .Summary }}
-  </div>
-  {{ end }}
-</section>
-<section class="mt-4">
-  <header>
-    <h2 class="title is-5">Categories</h2>
+<div id="section">
+  <header class="section hero is-dark">
+    <hgroup class="hero-body">
+      <h1 class="title is-1">{{ .Name | title }}</h1>
+      <p class="subtitle">
+        {{ .Content }}
+      </p>
+    </hgroup>
   </header>
-  <main>
-    {{ partial "sectionCategories.html" . }}
+  <main class="section">
+    <ul class="grid">
+      {{ range .Pages }}
+      <li>
+        <article class="card">
+          <main class="card-content">
+            <h2 class="title is-family-primary is-4"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            {{ .Summary }}
+          </main>
+        </article>
+      </li>
+      {{ end }}
+    </ul>
   </main>
-</section>
+</div>
 {{ end }}

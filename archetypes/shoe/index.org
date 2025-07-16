@@ -1,0 +1,5 @@
+#+TITLE:
+#+DATE: {{ .Date }}
+#+OWN: false
+#+CATEGORY[]:
+#+TAGS[]:

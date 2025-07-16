@@ -1,12 +1,17 @@
 {{ define "main" }}
 <div id="home">
-  {{/* <section id="home-content">
-    {{ .Content | safeHTML }}
-  </section> */}}
-  <section id="home-featured-post">
-    <header>
-      <span class="badge">FEATURE</span>
-    </header>
+  <section class="hero is-primary is-halfheight">
+    <div class="hero-body hero-body-max-width">
+      <div class="container">
+        <p class="title">Hello, and welcome...</p>
+        <p class="subtitle">San Francisco Software Engineer Jackson Galan builds at <a
+            class="has-text-primary-invert is-underlined" href="http://goldengatesoftwaresolutions.com"
+            target="_blank">Golden Gate Software Solutions</a> and
+          here posts about web development, technology, and more.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
     <main>
       {{ partial "featuredPost.html" . }}
     </main>

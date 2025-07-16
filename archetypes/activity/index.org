@@ -1,6 +1,0 @@
-#+date: {{ .Date }}
-#+draft: t
-#+title: {{ (time .File.ContentBaseName).Format "3:04pm" }}
-#+performedAt: {{ .File.ContentBaseName }}
-#+rating: 0
-#+tags[]:

@@ -1,13 +1,10 @@
 #+DATE: 2025-06-21T06:30:30-07:00
 #+DRAFT: true
 #+FEATURED: false
-#+TITLE: Self Reliance
+#+TITLE: Self-Reliance
 #+CATEGORIES[]: audiobook
 #+TAGS[]: transcendentalism
-
-* Self-Reliance
-
-Ralph Waldo Emerson
+#+SUMMARY: Essay on the importance of self-worth.
 
 ** Ch. 1
 

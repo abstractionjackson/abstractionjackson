@@ -1,0 +1,8 @@
+#+TITLE: Model-000
+#+OWN: false
+#+CATEGORY[]: sneaker
+#+TAGS[]: lightweight comfort
+
+{{< figure src="./side.webp" caption="Model-000, Black" width="400">}}
+
+I saw these on a banner ad in the New York Times. It was during the pandemic. I had recently completed a coding bootcamp, and one of the instructors -- who I admired -- work black, exclusively. 

@@ -1,0 +1,24 @@
+{
+  "name": "abstractionjackson",
+  "version": "1.0.0",
+  "description": "- 🔭 I'm the Founder and CEO of Golden Gate Software Solutions, a web design company based in San Francisco. - 🌱 I’m currently learning Decap CMS (for the customers!) - 💬 Ask me about JavaScript, web development, and application architecture.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abstractionjackson/abstractionjackson.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/abstractionjackson/abstractionjackson/issues"
+  },
+  "homepage": "https://github.com/abstractionjackson/abstractionjackson#readme",
+  "dependencies": {
+    "bulma": "^1.0.4"
+  }
+}

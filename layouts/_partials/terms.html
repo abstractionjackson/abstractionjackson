@@ -11,12 +11,10 @@ For a given taxonomy, renders a list of terms assigned to the page.
 {{- $taxonomy := .taxonomy }}
 
 {{- with $page.GetTerms $taxonomy }}
-<ul class="terms-list {{ if eq $taxonomy " categories" }}categories-list{{ else if eq $taxonomy "tags" }}tags-list{{ end
-  }}">
+<ul class="is-flex terms">
   {{- range . }}
   {{- $displayTitle := title (replace .LinkTitle "_" " ") }}
-  <li><a href="{{ .RelPermalink }}" class="term-link {{ if eq $taxonomy " tags" }}is-secondary{{ end }}">{{
-      $displayTitle }}</a></li>
+  <li><a class="has-text-weight-light" href="{{ .RelPermalink }}">{{ $displayTitle }}</a></li>
   {{- end }}
 </ul>
 {{- end }}

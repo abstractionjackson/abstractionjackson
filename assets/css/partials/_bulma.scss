@@ -1,0 +1,15 @@
+@use "partials/font";
+
+// Set your brand colors
+$red: hsl(338.85deg 100% 27.25%);
+$navy: hsl(220deg 100% 20%);
+
+@use "bulma/sass/index" with (
+  $family-primary: font.$family-primary,
+  $family-secondary: font.$family-secondary,
+  $title-family: font.$family-secondary,
+  $primary: $red,
+  $link: $navy,
+  $control-border-width: 2px,
+  $input-shadow: none
+);

@@ -1,53 +1,22 @@
-// Terms, tags, and social links styles
-.terms-list {
-  display: flex;
-  flex-direction: row;
-  gap: 0.75rem;
-  list-style: none;
-  margin: 0.5rem 0 0 0;
-  padding: 0;
-}
-.terms-list li {
-  margin: 0;
-}
-.term-link {
-  color: #3273dc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-.term-link:hover {
-  color: #205493;
-  text-decoration: underline;
-}
-.tags-list .term-link {
-  color: #8b0031;
-  text-decoration: none;
-}
-.tags-list .term-link:hover {
-  color: #b3004b;
-  text-decoration: underline;
+.terms {
+  gap: 1rem;
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  list-style: none;
-  margin: 1rem 0 0 0;
-  padding: 0;
-  justify-content: center;
+#top-nav {
+  .navbar-item > img {
+    max-height: 2.5rem;
+  }
 }
-.social-links li {
-  margin: 0;
+
+#featured-post {
+  .badge {
+    text-transform: uppercase;
+  }
 }
-.social-links a {
-  color: #3273dc;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-.social-links a:hover {
-  color: #205493;
-  text-decoration: underline;
+
+.content {
+  blockquote,
+  ul {
+    margin-bottom: 1rem;
+  }
 }

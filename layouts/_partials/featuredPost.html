@@ -2,26 +2,32 @@
 "Params.featured" "t")
 }}
 {{ with index $featured 0 }}
-<article class="featured-post">
-    <header class="mb-4">
-        <h2 class="title is-2 mb-3">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </h2>
-        {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-        {{ $dateHuman := .Date | time.Format ":date_long" }}
-        <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-        <div class="category-link">
-            {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+<div class="card">
+    <div class="card-header">
+        <div class="card-header-title"><span>FEATURED</span></div>
+    </div>
+    <div class="is-flex-desktop container">
+        <div class="card-image p-4">
+            {{ partial "previewImage.html" . }}
         </div>
-        <div class="tags-list">
-            {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+        <div class="card-content">
+            <div class="media">
+                <div class="media-content">
+                    <p class="title is-4 mb-2"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+                    <p class="subtitle is-6">{{ $dateHuman }}</p>
+                </div>
+            </div>
+            <div class="content">
+                {{ .Summary }}
+
+            </div>
+            <a href="{{ .RelPermalink }}" class="button is-primary">Read More</a>
+            <div class="tags-list my-4">
+                {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+            </div>
         </div>
-        {{ partial "github-repo-link.html" . }}
-    </header>
-    <main class="content">
-        {{ .Content }}
-    </main>
-</article>
-{{ else }}
-<p>No featured post found.</p>
+    </div>
+</div>
 {{ end }}

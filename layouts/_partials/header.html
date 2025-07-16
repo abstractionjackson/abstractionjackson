@@ -1,26 +1,27 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand is-flex is-align-items-center">
-        <a href="{{ .Site.BaseURL }}" class="navbar-item brand-logo">
-            {{ with resources.GetMatch "images/brand-logo.*" }}
-            <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }} Logo" />
-            {{ end }}
-        </a>
-        {{/* <a role="button" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false"
-            data-target="mainNavbarMenu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a> */}}
-    </div>
-    {{/* <div id="mainNavbarMenu" class="navbar-menu" style="box-shadow: none !important;">
-        <ul id="mainNavbarMenuList" class="navbar-end">
-            {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
-            {{ end }}
-        </ul>
-    </div> */}}
-</nav>
-{{/*
+<div id="header">
+    <nav id="top-nav" class="navbar p-6 is-align-items-center" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a href="{{ .Site.BaseURL }}" class="navbar-item brand-logo">
+                {{ with resources.GetMatch "images/brand-logo.*" }}
+                <img src="{{ .RelPermalink }}" alt="{{ $.Site.Title }} Logo" />
+                {{ end }}
+            </a>
+            <a role="button" class="navbar-burger mr-4" aria-label="menu" aria-expanded="false"
+                data-target="mainNavbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="mainNavbarMenu" class="navbar-menu" style="box-shadow: none !important;">
+            <ul id="mainNavbarMenuList" class="navbar-end">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+</div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         var burger = document.querySelector('.navbar-burger');
@@ -44,4 +45,4 @@
             });
         });
     });
-</script> */}}
+</script>

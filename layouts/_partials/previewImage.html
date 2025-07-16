@@ -1,0 +1,5 @@
+<figure class="image featured-image">
+    {{ with .Resources.GetMatch "images/preview.*"}}
+    <img src="{{ .RelPermalink }}" alt="{{ .Title }} Preview Image" />
+    {{ end }}
+</figure>

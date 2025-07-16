@@ -20,20 +20,7 @@ Content front matter can include a `repo` parameter to display GitHub repository
 ## Content Types
 
 - Portfolio items in `content/portfolio/` with archetype in `archetypes/portfolio/`
-- Activities are posted to `/activity/<date>/<datetime>.org` using a archetype in `archetypes/activity/`
 - Dreams in `content/dream/` with archetype in `archetypes/dream/`
 - Notes in `content/note/`
 - Sketches in `content/sketch/`
 - Culinary content in `content/culinary/`
-
-## Activity Data Structure
-
-Activity data has been migrated from org-mode files to JSON format in `data/activity/`:
-
-- **JSON Data**: One file per date (`YYYY-MM-DD.json`) containing all activity entries
-- **Schemas**: Located in `data/` directory:
-  - `activity-date.schema.json` - Schema for date objects with date, rating, and entries array
-  - `activity-entry.schema.json` - Schema for individual activity entries with date, draft, title, performedAt, rating, tags, and content fields
-- **Documentation**: `data/README.md` contains full documentation of the data structure
-
-When working with activity data, reference these schemas to understand the expected structure and validation rules.
