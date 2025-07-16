@@ -1,0 +1,76 @@
+{{ $pages := where .Site.RegularPages "Section" "timepiece" }}
+{{ $categories := .Site.Taxonomies.categories }}
+{{ $timepieceCategories := slice }}
+
+{{/* Build list of categories that have timepiece pages */}}
+{{ range $categoryName, $categoryPages := $categories }}
+{{ $hasTimepiecePages := false }}
+{{ range $categoryPages.Pages }}
+{{ if eq .Section "timepiece" }}
+{{ $hasTimepiecePages = true }}
+{{ break }}
+{{ end }}
+{{ end }}
+{{ if $hasTimepiecePages }}
+{{ $timepieceCategories = $timepieceCategories | append $categoryName }}
+{{ end }}
+{{ end }}
+
+<div class="timepiece-collection">
+    <!-- Tabs Navigation -->
+    <div class="tabs is-centered">
+        <ul id="timepiece-tabs">
+            <li class="is-active" data-category="all">
+                <a>All</a>
+            </li>
+            {{ range sort $timepieceCategories }}
+            {{ $displayName := title (replace . "_" " ") }}
+            <li data-category="{{ . }}">
+                <a>{{ $displayName }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+
+    <!-- Cards Container -->
+    <div class="timepiece-cards grid">
+        {{ range $pages }}
+        {{ $categories := .GetTerms "categories" }}
+        {{ $categoryList := slice }}
+        {{ range $categories }}
+        {{ $categoryList = $categoryList | append .LinkTitle }}
+        {{ end }}
+        <div class="timepiece-card" data-categories="{{ delimit $categoryList " ," }}">
+            {{ partial "timepiece/card.html" . }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const tabs = document.querySelectorAll('#timepiece-tabs li');
+        const cards = document.querySelectorAll('.timepiece-card');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function () {
+                const selectedCategory = this.dataset.category;
+
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('is-active'));
+                this.classList.add('is-active');
+
+                // Filter cards
+                cards.forEach(card => {
+                    const cardCategories = card.dataset.categories.split(',').map(cat => cat.trim().toLowerCase());
+
+                    if (selectedCategory === 'all' || cardCategories.includes(selectedCategory)) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>

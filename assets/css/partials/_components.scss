@@ -20,3 +20,11 @@
     margin-bottom: 1rem;
   }
 }
+
+.timepiece.card .thumbnail {
+  max-height: 360px;
+  width: 100%;
+  img {
+    object-fit: cover;
+  }
+}

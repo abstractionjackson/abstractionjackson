@@ -1,0 +1,10 @@
+{{ define "main" }}
+<header class="hero">
+    <hgroup class="hero-body">
+        <h1 class="title is-1">{{ .Title }}</h1>
+    </hgroup>
+</header>
+<main class="section">
+    {{ partial "timepiece/collection.html" . }}
+</main>
+{{ end }}
