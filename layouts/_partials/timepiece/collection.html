@@ -33,7 +33,7 @@
     </div>
 
     <!-- Cards Container -->
-    <div class="timepiece-cards grid">
+    <div class="timepiece-cards grid is-col-min-12">
         {{ range $pages }}
         {{ $categories := .GetTerms "categories" }}
         {{ $categoryList := slice }}
@@ -41,7 +41,9 @@
         {{ $categoryList = $categoryList | append .LinkTitle }}
         {{ end }}
         <div class="timepiece-card" data-categories="{{ delimit $categoryList " ," }}">
-            {{ partial "timepiece/card.html" . }}
+            <a href="{{ .RelPermalink }}">
+                {{ partial "timepiece/preview.html" . }}
+            </a>
         </div>
         {{ end }}
     </div>

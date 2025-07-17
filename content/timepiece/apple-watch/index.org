@@ -1,4 +1,0 @@
-#+TITLE: Apple Watch SE
-#+CATEGORIES[]: smart
-#+TAGS[]: gps alarm notifications
-#+DESCRIPTION: More complications than any other watch, and growing...

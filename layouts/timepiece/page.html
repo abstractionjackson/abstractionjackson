@@ -1,0 +1,20 @@
+{{ define "main" }}
+<header class="hero">
+    <div class="hero-body has-text-centered">
+        <h2 class="title is-1">{{ .Title }}</h2>
+    </div>
+</header>
+<main>
+    <section class="has-text-centered mb-4">
+        {{ partial "timepiece/detail.html" . }}
+    </section>
+    <section class="section box" style="max-width: 600px; margin: 0 auto;">
+        <header class="mb-4">
+            <h4 class="is-4 has-text-weight-bold">Notes</h4>
+        </header>
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </section>
+</main>
+{{ end }}

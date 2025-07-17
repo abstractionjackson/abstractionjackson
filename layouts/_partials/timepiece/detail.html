@@ -1,0 +1,44 @@
+<div class="table-container">
+    <table class="table is-striped" style="width: fit-content; margin: 0 auto;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Purchase Date</th>
+                <th>Cost</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    {{ .Title }}
+                </td>
+                <td>
+                    {{ if .Params.purchaseDate }}
+                    {{ .Params.purchaseDate | time.Format "Jan 2, 2006" }}
+                    {{ else }}
+                    —
+                    {{ end }}
+                </td>
+                <td>
+                    {{ if .Params.cost }}
+                    ${{ .Params.cost }}
+                    {{ else }}
+                    —
+                    {{ end }}
+                </td>
+                <td>
+                    {{ $categories := .GetTerms "categories" }}
+                    {{ if $categories }}
+                    {{ range $index, $category := $categories }}
+                    {{ if $index }}, {{ end }}
+                    {{ title (replace $category.LinkTitle "_" " ") }}
+                    {{ end }}
+                    {{ else }}
+                    —
+                    {{ end }}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

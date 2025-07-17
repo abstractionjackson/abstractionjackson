@@ -1,6 +1,6 @@
 <article class="timepiece card">
     <div class="card-image">
-        {{ with .Resources.GetMatch "images/thumbnail.*" }}
+        {{ with .Resources.GetMatch "preview" }}
         <figure class="image thumbnail is-square">
             <img src="{{ .RelPermalink }}" alt="{{ $.Title }}">
         </figure>
