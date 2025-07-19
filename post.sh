@@ -9,12 +9,23 @@ content_path_relative="$1"
 if [ -z "$content_path_relative" ]; then
   echo "Error: No content path provided."
   echo "Usage: post <relative/path/to/new/content>"
+  echo "       post plan (creates plan with today's date)"
   exit 1
 fi
 
-# Use hugo new content to create the file/directory and capture its output (the path)
-# Capture standard error as well to check for errors
-hugo_output=$(hugo new content "$content_path_relative" 2>&1)
+# Handle special case for "plan" posts
+if [ "$content_path_relative" = "plan" ]; then
+  # Get today's date in YYYY-MM-DD format
+  today_date=$(date +%Y-%m-%d)
+  content_path_relative="plan/$today_date"
+  
+  # Use hugo new content with the plan archetype
+  hugo_output=$(hugo new content "$content_path_relative" --kind plan 2>&1)
+else
+  # Use hugo new content to create the file/directory and capture its output (the path)
+  # Capture standard error as well to check for errors
+  hugo_output=$(hugo new content "$content_path_relative" 2>&1)
+fi
 
 # Check if hugo new content command was successful
 # Look for "Error" in the output
