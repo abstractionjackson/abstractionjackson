@@ -23,3 +23,8 @@ node_modules/
 # VS Code settings
 .vscode/
 
+# Content
+content/plan/
+
+# Data
+data/workout.*
