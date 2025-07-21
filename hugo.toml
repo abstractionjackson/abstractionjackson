@@ -34,6 +34,17 @@ name = 'Notes'
 pageRef = '/note'
 weight = 15
 
+[[menus.dev]]
+name = "Planner"
+pageRef = '/plan'
+weight = 30
+
+[[menus.dev]]
+name = "Timepiece"
+pageRef = '/timepiece'
+weight = 35
+
+
 # [[menus.main]]
 # name = 'Sketches'
 # pageRef = '/sketch'

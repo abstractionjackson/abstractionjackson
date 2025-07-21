@@ -18,6 +18,11 @@
                 {{ range .Site.Menus.main }}
                 <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
                 {{ end }}
+                {{ if eq hugo.Environment "development" }}
+                {{ range .Site.Menus.dev }}
+                <li><a href="{{ .URL }}" class="navbar-item nav-link">{{ .Name }}</a></li>
+                {{ end }}
+                {{ end }}
             </ul>
         </div>
     </nav>
