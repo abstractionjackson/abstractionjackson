@@ -1,0 +1,27 @@
+{{ $term := .Section }}
+{{ $data := index site.Data.terms ($term | singularize) }}
+{{ $relations := index $data .Name }}
+{{ if $relations }}
+{{ if $relations.belongsTo }}
+<hgroup class="relations belongs-to">
+    <h2>Belongs to</h2>
+    <ul class="subtitle">
+        {{ range $relations.belongsTo }}
+        {{ $parent := . }}
+        <a href="/{{ $term }}/{{ $parent }}">{{ $parent }}</a>
+        {{ end }}
+    </ul>
+</hgroup>
+{{ end }}
+{{ if $relations.has }}
+<hgroup class="relations has">
+    <h2>Has</h2>
+    <ul class="subtitle">
+        {{ range $relations.has }}
+        {{ $child := . }}
+        <a href="/{{ $term }}/{{ $child }}">{{ $child }}</a>
+        {{ end }}
+    </ul>
+</hgroup>
+{{ end }}
+{{ end }}

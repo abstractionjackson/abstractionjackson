@@ -1,0 +1,12 @@
+<ul class="grid is-cpl-min-12">
+    {{ range .Pages }}
+    <li>
+        <article class="card">
+            <main class="card-content">
+                <h2 class="title is-family-primary is-4"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+                {{ .Summary | strings.Truncate 150 "..."}}
+            </main>
+        </article>
+    </li>
+    {{ end }}
+</ul>

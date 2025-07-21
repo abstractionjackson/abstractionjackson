@@ -1,14 +1,12 @@
 {{ define "main" }}
-<header class="hero is-info">
-  <hgroup class="hero-body">
-    <h1 class="title is-3">{{ replace .Name "_" " " | title }}</h1>
-  </hgroup>
-</header>
+{{ partial "term/hero" . }}
 <main class="section">
-  <ul>
-    {{ range .Pages }}
-    <li><a class="is-4" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-    {{ end }}
-  </ul>
+  <section>
+    <ul>
+      {{ range .Pages }}
+      <li><a class="is-4" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
 </main>
 {{ end }}

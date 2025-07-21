@@ -1,26 +1,8 @@
 {{ define "main" }}
 <div id="section">
-  <header class="section hero is-dark">
-    <hgroup class="hero-body">
-      <h1 class="title is-1">{{ .Name | title }}</h1>
-      <p class="subtitle">
-        {{ .Content }}
-      </p>
-    </hgroup>
-  </header>
+  {{ partial "section/hero" . }}
   <main class="section">
-    <ul class="grid is-cpl-min-12">
-      {{ range .Pages }}
-      <li>
-        <article class="card">
-          <main class="card-content">
-            <h2 class="title is-family-primary is-4"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-            {{ .Summary }}
-          </main>
-        </article>
-      </li>
-      {{ end }}
-    </ul>
+    {{ partial "section/pageByDateTable" .Pages }}
   </main>
 </div>
 {{ end }}

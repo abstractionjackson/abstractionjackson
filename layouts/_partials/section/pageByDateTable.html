@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range sort . "Date" "desc" }} <tr>
+            <td style="min-width: 12ch;">{{ .Date.Format "2006-01-02" }}</td>
+            <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

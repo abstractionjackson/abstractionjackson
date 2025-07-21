@@ -1,0 +1,6 @@
+<header class="hero is-info">
+    <hgroup class="hero-body">
+        <h1 class="title is-3">{{ replace .Name "_" " " | title }}</h1>
+        {{ partial "term/relations" . }}
+    </hgroup>
+</header>
