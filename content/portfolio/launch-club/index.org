@@ -24,9 +24,9 @@
 
 ** Leveraging the WordPress Elementor Plugin for a Mobile-First Redesign
 
-When it comes to e-commerce, accessibility is key. Every customer who tries to visit the site from a mobile device with a poor signal, only to be met with scroll bars and broken images is a customer forfeit, and for small businesses like Jason's, such an outcome is unacceptable. He wisely chose WordPress to manage site hosting and content, and began to use their Elementor system to build the User Interface (UI). Things were going great, because Elementor comes with responsive CSS baked-in, until his payment processing needs demanded an integration.
+When it comes to e-commerce, accessibility is key. Every customer who tries to visit the site from a mobile device with a poor signal, only to be met with scroll bars and broken images is a customer forfeit, and for small businesses like Jason's, such an outcome is unacceptable. He wisely chose WordPress to manage site hosting and content, and began to use their Elementor system to build the User Interface (UI). Things were going great, because Elementor comes with responsive CSS baked-in, until his payment processing needs required software outside the WordPress box.
 
-In order to couple the widgets his payment system, GymMaster, provides, Jason needed an engineer with JavaScript and HTML/CSS knowledge. I consulted over a productive client meeting in which the scope of the issue became understood. As a software engineer with five years of web development experience, I had worked on low-code systems like Elementor, but no two are exactly alike. My initial approach was to understand the widget, discover how it could be integrated with Elementor, and implement the code required to do so.
+In order to integrate his payment system, GymMaster, Jason needed an engineer with JavaScript and HTML/CSS knowledge. I consulted with him to understand the scope of the issue, and develop a solution. As a software engineer with five years of web development experience, I had worked on low-code systems like Elementor, but no two are exactly alike. My initial approach was to understand the GymMaster's API, and write code that would integrated Elementor, such that a payment processor be featured on the site.
 
 ** Black-Box Widgets
 
