@@ -1,18 +1,8 @@
 <div class="table-container">
     <table class="table is-striped" style="width: fit-content; margin: 0 auto;">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Purchase Date</th>
-                <th>Cost</th>
-                <th>Category</th>
-            </tr>
-        </thead>
         <tbody>
             <tr>
-                <td>
-                    {{ .Title }}
-                </td>
+                <th>Purchase</th>
                 <td>
                     {{ if .Params.purchaseDate }}
                     {{ .Params.purchaseDate | time.Format "Jan 2, 2006" }}
@@ -20,6 +10,9 @@
                     —
                     {{ end }}
                 </td>
+            </tr>
+            <tr>
+                <th>Cost</th>
                 <td>
                     {{ if .Params.cost }}
                     ${{ .Params.cost }}
@@ -27,6 +20,9 @@
                     —
                     {{ end }}
                 </td>
+            </tr>
+            <tr>
+                <th>Category</th>
                 <td>
                     {{ $categories := .GetTerms "categories" }}
                     {{ if $categories }}

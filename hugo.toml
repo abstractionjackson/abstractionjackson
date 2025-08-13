@@ -2,6 +2,8 @@ baseURL = 'https://abstractionjackson.com/'
 languageCode = 'en-us'
 title = 'Abstraction Jackson'
 
+summaryLength = 0
+
 [security.exec]
 allow = [
   '^(dart-)?sass(-embedded)?$',
@@ -44,6 +46,10 @@ name = "Timepiece"
 pageRef = '/timepiece'
 weight = 35
 
+[[menus.dev]]
+name = "Workouts"
+pageRef = '/workout'
+weight = 40
 
 # [[menus.main]]
 # name = 'Sketches'

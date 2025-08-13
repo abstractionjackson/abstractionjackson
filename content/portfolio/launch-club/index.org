@@ -3,7 +3,7 @@
 #+featured: t
 #+title: Building a Pixel-Perfect E-Commerce Site with Registration and Bookings
 #+categories[]: web_design
-#+tags[]: wordpress gymmaster e-commerce
+#+tags[]: wordpress gymmaster e-commerce js cs
 #+SUMMARY: The story of how a struggling golf site leveraged WordPress CMS to sink a bevy of new customers. 
 
 {{< figure src="images/landing.png" alt="a screen capture of the Launch Club Golf website landing on desktop" caption="Landing Page: Desktop Layout" >}}

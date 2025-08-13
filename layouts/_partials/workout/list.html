@@ -1,0 +1,14 @@
+<table class="table">
+    <tbody>
+        {{ range .Pages }}
+        <tr>
+            <th>
+                {{ .Date | time.Format "Jan 2, 2006" }}
+            </th>
+            <td>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>

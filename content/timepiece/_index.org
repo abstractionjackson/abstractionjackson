@@ -2,6 +2,7 @@
 #+DATE: 2025-07-16T13:43:26-07:00
 #+DESCRIPTION: 
 #+DRAFT: true
+#+SUMMARY: I am a watch guy.
 
 A friend once asked, "Are you a watch guy?"
 

@@ -1,0 +1,44 @@
+#+DATE: 2025-07-24T10:24:19-07:00
+#+TITLE: Plan - July 24, 2025
+#+SUMMARY: In the hours before work (11am - 3pm), I plan to organize the code of my [[https://abstractionjackson.com][*personal website*]], and -- time permitting -- build a /data visualization/ for the _workout_ section. Then, I will *look for software engineering opportunities* _online_, at /Indeed/ and /LinkedIn.com/. Finally, I will *build* out the home page of my /web design/ _business_, /Golden Gate Software Solutions/, to include a "Featured Client" section.
+
+* Items
+
+1. Build Abstraction Jackson
+   a. Ccan Hugo be configured to include a remote content dir?
+2. Job Search
+3. Build GGSS
+
+* Brain Dump
+- Zoox
+  - Install Google Calendar
+    - Install Google Policy
+      - Authorize Installation
+        - Provide Apple Password
+  - Day 4
+    - Begin at 3PM to check Slack, depart
+- Entertainment
+  - Giants
+- Personal Enrichment / Fun
+  - `ledger`
+  - abstractionjackson.com development
+  - reading
+- Gym
+  - rest
+  - maybre go for a run
+  - legs tomorrow
+- Home & Health
+  - mouse MIA
+    - keep cleaning
+  - last eggs tomorrow
+    - shop Safeway, Saturday or Sunday
+  - lunch: chicken salad
+  - supper: Zoox sandwich
+  - dinner: chicken + hot sauce
+- Dating
+  - keep swipinge
+  - somehow, I've not blown it with Rachel (?)
+    - revel & bask;
+- GGSS
+  - build section: Featured Client
+  - fix styles: contact

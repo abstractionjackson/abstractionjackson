@@ -1,0 +1,38 @@
+#+DATE: 2025-08-08
+#+TITLE: Plan - August 8, 2025
+#+SUMMARY: This morning, I will look for work online, including an investigation into *Thumbtack*, a follow-up with *TEKSystems*, and a batch of *cold applies* via Jobright. Then, I will go to the gym, and workout the *legs*. After that, I will go out to lunch, either to a fast, casual eatery like Souvla, or to Safeway. Before leaving for work, I will try to *rest* for a couple hours, to recover from the workout, and have energy enough to stay awake during the work day. When the day is done, I will *come straight home*, and go to bed.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** TODO Job Search
+
+** TODO Workout Lower
+SCHEDULED: <2025-08-08 Fri 10:30>
+
+** TODO Rest
+
+* Brain Dump
+
+- 7am wake up
+  - dramt of Nirvana. I was in a group of men an women: my friends, my peers. None were Jewish, but the most vocal felmale proposed we visit the Jewish Museum as a (diversion?) activity.
+  - I wanted to go to the strip club
+  - Or, at least, that's the preference I wanted to project to the group, and so made a show of asking various members in turn if he or she was Jewish, then asking the crowd, "So, am I the only one?"
+  - This prompted her to say that I had gone about revealing an (implied) insignificant fact through a labrious route, thereby wasting the group's time, and failing to advocate for the club.
+  - At this point, an ex-girlfriend who still cared about me sent a video to my phone. A home movie from my childhood, I sat the age of four at the throne of a drumkit in the home basement. My father beside me, he played Nirvana's "Smell's Like Teen Spirit", and I kept time on the hi-hat, the uncoordidinated taps of a neophyte.
+  - Soon, I stopped trying, and tried instead to look cute as I lay my head on the cymbal. No, daddy, I don't want to play. The old man gave me encouragement, taking the sticks to tap a few notes in demonstration. He gently prodded my ribs.
+  - Remember this? she said.
+- 8:30 am breakfast
+  - walk around the block
+  - cook eggs (4) and make coffee
+  - supplement protein, creatine, l-citruline, l-carnatine, caffiene
+  - cry at the memory of a dream
+  - clean the kitchen countertop, and wash the dishes in the sink
+- Defer the gym till 10/:30
+- software-related:
+  - learn awk
+  - continue to learn JSON schema
+- entertainment
+  - Giants v Nats. this weekend
+- massage: either drop-in or make an appointment
+  - budget? $75

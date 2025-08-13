@@ -1,0 +1,21 @@
+#+DATE: 2025-07-27
+#+TITLE: Plan - July 27, 2025
+#+SUMMARY: This morning, I am going to learn ~ledger~. In the early afternoon, I will *shop* at Costco, then -- time permitting -- go to the *gym* for a /light/ cardio session and /some/ heat. Finaly, I will put the *Giants* game on, and *cook* chicken for the days ahead.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** DONE Cook Breakfast
+
+** TODO Learn ~ledger~
+
+** TODO Shop Costco
+** TODO Meal Prep Chicken
+
+#+ATTR_HTML: :class brain-dump
+* Brain Dump
+
+- Giants at 4
+- Bumble match waiting
+- Sauna weather
+- Take it easy

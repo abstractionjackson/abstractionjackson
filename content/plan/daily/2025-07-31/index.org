@@ -1,0 +1,70 @@
+#+DATE: 2025-07-31
+#+TITLE: Plan - July 31, 2025
+#+SUMMARY: This morning, I will job search by taking a coding challenge, and -- time permitting -- sending applications. Then, I will go to the gym and strngth train my legs. Finally, I will prepare chicken to feed myself on dinner break at work.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** DONE Complete Coding Challenge
+SCHEDULED: <2025-07-31 Thu 10:30>
+:PROPERTIES:
+:Effort:   45
+:END:
+
+
+*** Result: 78%
+
+*** Next Steps
+- ask Boris for advice: worth taking again?
+
+** +TODO Workout Lower+
+SCHEDULED: <2025-07-31 Thu 11:30>
+:PROPERTIES:
+:Effort:   60
+:END:
+- pust till tomorrow, or Sunday
+
+** +TODO Meal Prep Chicken+ 
+SCHEDULED: <1970-07-31 Fri 13:30>
+- push till tomorrow
+  
+* Brain Dump
+
+- GGSS
+  - how?
+
+- I'm fucking angry about something, and I can't put my finger on it
+
+  - My mother doesn't listen to a word I say:
+
+    - she finishes the call by saying "I love you, bye-bye", hanging up before I can say I love you, too, then sulking because I don't love her.
+
+    - It makes me feel MISERABLE
+
+    - I am going to have to just say I love you as soon as she starts to say the words, and try to say love before she does
+
+    - Something must be wroong to make her talk like that
+
+  - My friend is nosy
+
+    - he has good intentions
+
+    - he is hyper critical
+
+    - he's not helping
+
+    - he wants things to move too quickly
+
+  - What can I do?
+
+    - show up to work, and continue to perform
+
+    - adhere to my diet
+
+    - get regular exercise
+
+    - go out on the weekends
+
+    - look for a day job that's actually in the day
+
+    - 

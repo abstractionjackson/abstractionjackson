@@ -1,0 +1,49 @@
+#+DATE: 2025-08-11
+#+TITLE: Plan - August 11, 2025
+#+SUMMARY: This morning, I will code the planner schema before breakfast. After, I'll go to the gym, and train legs. Then, I'll look for work online, following-up with Boris at /TEKSystems/. Finally, I'll meal prep for the next few days: cubed chicken breast,  breaded and fried.
+#+OVER_THE_WEEKEND: Friday night, I went home and stayed up watching TV. Saturday, I went to the gym, worked on a personal project, and watched an old movie on TV. Sunday, I went to the Thai massage parlor, and  wrote more code before dinner at my parents' house.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** DONE Code
+- planner schema 12:30pm - 1:15pm
+
+** DONE Breakfast
+
+** DONE Workout Legs
+
+** DONE Job Search
+- call Boris between 1:30 and 2pm
+
+** DONE Reply Bumble Matches
+
+** DONE Meal Prep Chicken
+- eat lunch at 3pm (chicken salad)
+
+** TODO Meal Prep Ground Beef
+- onions, peppers
+- baked potato
+
+* Brain Dump
+
+- slept till 8:30AM
+  - sore back (DOMS)
+- what to do today?
+  - job search
+    - follow up Boris
+    - nothing else is really going on
+    - continue to send cold applies
+  - go to the gym
+    - legs
+    - or not to legs
+    - because I need to save my energy for work
+    - but that's what coffee is for
+  - receive shoes package
+    - est delivery time 12 - 5pm
+    - leave a note saying deliver to side, UPS
+  - dispute Thumbtack charges
+    - call 'em
+  - study for check ride
+  - use ledger
+  - study JSON schema

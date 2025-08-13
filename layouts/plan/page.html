@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div id="plan">
+    <header class="hero is-light">
+        <hgroup class="hero-body max-w-readable">
+            <h2 class="title is-2 is-family-primary">{{ .Title }}</h2>
+            <p class="subtitle">
+                {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+                {{ $dateHuman := .Date | time.Format ":date_long" }}
+                <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            </p>
+            <div class="block">
+                {{ partial "terms.html" (dict "taxonomy" "categories" "page" .) }}
+            </div>
+            <div class="block">
+                {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+            </div>
+            <div class="block">
+                {{ partial "github-repo-link.html" . }}
+            </div>
+        </hgroup>
+    </header>
+    <main class="max-w-readable content">
+        {{ if .Summary }}
+        <section class="section">
+            <header>
+                <h3 class="title is-4">
+                    Summary
+                </h3>
+            </header>
+            <main class="content">
+                {{ .Summary }}
+            </main>
+        </section>
+        {{ end }}
+        {{ if .Params.over_the_weekend}}
+        <section class="section">
+            <header>
+                <h3 class="title is-4">
+                    Over the Weekend
+                </h3>
+            </header>
+            <main class="content">
+                {{ .Params.over_the_weekend }}
+            </main>
+        </section>
+        {{ end }}
+        {{ .Content }}
+    </main>
+</div>
+{{ end }}

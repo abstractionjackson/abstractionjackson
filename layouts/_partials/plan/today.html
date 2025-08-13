@@ -1,0 +1,11 @@
+{{ $today := now.Format "2006-01-02" }}
+{{ $planPages := where site.RegularPages "Section" "plan" }}
+{{ $todayPage := "" }}
+{{ range $planPages }}
+{{ if eq (.Date.Format "2006-01-02") $today }}
+{{ $todayPage = . }}
+{{ end }}
+{{ end }}
+{{ if $todayPage }}
+{{ return $todayPage }}
+{{ end }}

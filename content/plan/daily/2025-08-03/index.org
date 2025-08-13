@@ -1,0 +1,23 @@
+#+DATE: 2025-08-03
+#+TITLE: Plan - August 3, 2025
+#+SUMMARY: 
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** TODO Return SFPL books
+
+** TODO Workout Legs
+- [ ] RDL
+- [ ] Leg Extension
+- [ ] Leg Curl
+- [ ] Cossack Squat
+- [ ] Bulgarian Split Squat
+- [ ] High-Bar Back Squat
+
+* Brain Dump
+
+- Dine Caselli
+- Shop Costco
+  - protien powder, beef, sweet potato, tuna, mo' chicken, ...
+  - 

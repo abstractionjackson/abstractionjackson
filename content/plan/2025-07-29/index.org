@@ -1,0 +1,41 @@
+#+DATE: 2025-07-29
+#+TITLE: Plan - July 29, 2025
+#+SUMMARY: This morning, I will look for a software engineering job. In the later morning, I will go to the gym, and workout the shoulders. Time permitting, I will take a bag of clothes to the Cross Roads trading compnay, and exchange them for cash.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** DONE Job Search
+- [X] talk to Boris
+** DONE Workout Shoulders
+- [X] strict press
+- [X] kneeling single-arm overhead press
+- [X] reverse fly (rear delt)
+** +TODO Exchange Clothes+
+- tomorrow
+
+* Brain Dump
+
+- workout
+  - legs, chest, or shoulders?
+  - sauna
+- linkedin
+  - TEKSystems
+    - reply Boris
+  - check messages
+- health
+  - living on a thin line
+    - abstain to imbibe
+    - wind down PM:
+      - no calories after 8PM
+      - herbal tea before bed
+      - no screens: audiobook, or music
+- home
+  - pest
+    - set traps before leaving for work (reminder set)
+  - donations
+    - take clothes to Crossroads
+  - clotheing
+    - shoes: atoms
+    - black tactical pant
+    - black lined windbreaker

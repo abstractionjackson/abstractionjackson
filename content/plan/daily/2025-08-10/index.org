@@ -1,0 +1,47 @@
+#+DATE: 2025-08-10
+#+TITLE: Plan - August 10, 2025
+#+SUMMARY: This morning, I will *cook* and eat breakfast, then go to the /YMCA/ to *train* my upperbody strength. After that, I will ride my bike to the /Thai massage/ parlor for *30 min of Foot Reflexology*, after which, I will return home. This afternoon, I can do as I please: watch the Giants, code a personal project, or read a book. Finally, I will ride my bike to /Caselli/ for *dinner* at my father's table.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** DONE Breakfast
+- bacon, eggs, potato, red bell pepper, onion
+- black coffee
+
+** DONE Gym
+- row
+- push-ups
+- dips
+- pull-ups
+- bicep curls
+- seated overhead dumbbell press
+- tricep extensions
+
+** DONE Spa
+- foot massage
+
+** DONE Watch Giants
+- Nationals
+  
+** DONE Code Planner
+- see requirements from yesterday
+  
+* Brain Dump
+
+- Reflexology
+  - appt for 1PM
+  - 30 min
+  - $60 and no tip
+  - go to the gym before
+    - eat breakfast
+- Giants Game at 1PM
+- so the morning goes something like
+  - 11AM eat breakfast
+  - 12PM go to the gym, and train arms, sauna
+  - 1PM go to the spa
+  - 1:30PM go home and watch the tail end of the giants game
+  - 2PM eat lunch
+  - 3/:30PM write code
+  - ...
+  - 6PM leave for Caselii, dinner

@@ -1,0 +1,27 @@
+{
+  "foobar": {
+    "belongsTo": [],
+    "has": [
+      "bar"
+    ]
+  },
+  "media": {
+    "belongsTo": [],
+    "has": [
+      "audiobook",
+      "podcast"
+    ]
+  },
+  "audiobook": {
+    "belongsTo": [
+      "media"
+    ],
+    "has": []
+  },
+  "podcast": {
+    "belongsTo": [
+      "media"
+    ],
+    "has": []
+  }
+}

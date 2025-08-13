@@ -1,0 +1,52 @@
+{{ define "main" }}
+{{ $today := partial "plan/today" . }}
+<div id="plan">
+    <section class="section max-w-readable ml-0">
+        <header class="mb-2">
+            <hgroup>
+                <h2 class="title is-2">Today's Plan</h2>
+                <p class="subtitle">{{ now.Format "January 2, 2006" }}</p>
+            </hgroup>
+        </header>
+        {{ if $today }}
+        <main>
+            <article class="plan-summary">
+                {{ if $today.Summary }}
+                {{ $today.Summary | markdownify }}
+                {{ else }}
+                <p>No summary available for today.</p>
+                {{ end }}
+            </article>
+        </main>
+        <footer>
+            <a href="{{ $today.Permalink }}" class="button is-primary mt-2">View</a>
+        </footer>
+        {{ else }}
+        <main>
+            <p class="has-text-centered">No plan available for today.</p>
+        </main>
+        {{ end }}
+    </section>
+    {{/* {{ partial "section/hero" . }} */}}
+    <section class="section">
+        <header>
+            <h2 class="title is-2">Past</h2>
+        </header>
+        <main>
+            <table class="table">
+                <tbody>
+                    {{ range sort .Pages "Date" "desc" }} <tr>
+                        <td style="min-width: 12ch;">
+                            <a href="{{ .Permalink }}">
+                                {{ .Date.Format "January 2, 2006" }}
+                            </a>
+                        </td>
+                    </tr>
+                    {{ end }}
+                </tbody>
+            </table>
+
+        </main>
+    </section>
+</div>
+{{ end }}

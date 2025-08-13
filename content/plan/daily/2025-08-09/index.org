@@ -1,0 +1,66 @@
+#+DATE: 2025-08-09
+#+TITLE: Plan - August 9, 2025
+#+SUMMARY: This morning, I listed a couple of clothing items *for sale* on /Poshmark/, had a conversation on the phone with my father, and sent a disput email for a financial issue. This afternoon, I will go to the gym, and *workout the back*. After that, I'll write some *code*, and shop for *groceries* at /Safeway/. In my free time, I can look for work, or watch the Giants game.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** DONE Workout Upper
+- review last upper workout(s)
+- define routine
+- travel to the Y, and perform
+
+** TODO Code
+
+*** DONE Workout Tracker
+- build the workout program
+  - continue to define the JSON schema for workout, exercise...
+  - time-permitting, update the CLI to conform to the schema
+
+*** TODO Planner
+
+- time permitting, build the planner
+  - front-end feature: Past, Present, anf Future
+    - as a reader, I want to see a summary of the current plan (if it exists),  a list of past plans, and a list of future plans
+  - back-end feature: Weekly
+    - I want to be able to capture plans that unfold over the course of week, and -- eventually, a quarter
+    - these plans should contain goals/todos towards which child plans (ie. daily plans) contribute.
+  - back-end feature: values
+    - I want to define a set of values that inform my plans
+    - a given plan should related (ie. informedBy: someValue) to some value
+    - use Cal Newport as a guide for the definition of value
+
+
+** TODO Shop Safeway
+- buy pork chops
+- cabbage, and caraway seeds
+  - make saurkraut
+- ketchup
+- salad mix
+- bananas
+- bread
+
+* Brain Dump
+
+- 10am wake up
+  - made bed
+  - made coffee
+  - dad called to say hi
+  - Thumbtack charged my MasterCard
+    - I emailed disputes
+    - It's the weekend, and I'll have to wait
+  - Shoes and Jeans listed on Poshmark
+    - Levi's
+    - Birkenstock
+- 12pm: what do I need to do today?
+  - nothing
+  - the weather is meh, and it is probably not nice enough to sunbathe in the yard
+  - the Giants are playing in San Francisco
+  - a match arrived my Bumble account
+    - investigate
+    - try to get a date tonight
+  - job search
+  - test prep
+  - grocery shop
+  - exercise
+  - code

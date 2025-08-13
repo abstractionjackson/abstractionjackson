@@ -1,0 +1,22 @@
+#+DATE: 2025-07-20T09:21:54-07:00
+#+TITLE: Plan
+
+* Summary
+In the morning, I spent a few hours developing a website for my small business. Then, I went to the gym, and swam in Letterman pool at a relaxed pace. Finally, I took care of a the paperwork in advance of day 1 at a new job, tomorrow.
+* Items
+
+1. Web Development: AbstractionJackson.com
+2. Pool Swim: YMCA Letterman
+3. Prepare for Work
+
+* Brain Dump
+- watch giants
+- go to the gym
+- sketch again: human faces
+- clean the apartment
+- prepare for the first day of work tomorrow
+- find a date
+- hack on my website
+- study the `ledger` util
+- try to find a date
+- go for a swim in Letterman pool

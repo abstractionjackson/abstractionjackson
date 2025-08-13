@@ -50,3 +50,10 @@ body > footer {
     margin-bottom: 1rem;
   }
 }
+
+.relations.belongs-to,
+.relations.has {
+  a {
+    color: #ffffff;
+  }
+}

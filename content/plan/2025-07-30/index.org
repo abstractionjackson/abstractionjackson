@@ -1,0 +1,32 @@
+#+DATE: 2025-07-30
+#+TITLE: Plan - July 30, 2025
+#+SUMMARY: Today, I'm going to rest from the gym, walking for active recovery to the bank, in order to dispute a service fee, then to the grocery store for staples. Finally, I'll spend the early afternoon coding, and looking for work, before leaving for the workday.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** TODO Walk
+- [ ] CITI
+- [ ] Safeway
+
+** TODO Job Search
+
+** TODO Meal Prep
+
+* Brain Dump
+
+- up late: 9:45am wake up
+  - skip $15 coffee
+  - why? cost, and I skipped leg day Monday
+- $15 CC "service fee"
+  - go complain
+- Job Search
+  - revised resume sent to Boris at TEKSystems
+  - ...
+- made own coffee
+- 10:30am breakfast: eggs and peppers, parfait
+  - eat lunch at 1:30pm
+- hack on the abstraction jackson site
+- what about the gym?
+  - rest; I am sore from yesterday
+  - 

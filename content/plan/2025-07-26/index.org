@@ -1,0 +1,24 @@
+#+DATE: 2025-07-26T10:49:12-07:00
+#+TITLE: Plan - July 26, 2025
+#+SUMMARY: I will this morning shop for groceries. Having eaten breakfast and cleaned up a bit around the house, I will study the double-entry acounting system of `ledger` in an effort to control my finances. In the late morning or early afternoon, I will ride to the gym, and workout the back, and perhaps sit in the sauna. During these hours, I will attempt to land a date with Ella, from Bumble, at a San Francisco spot. No matter the outcome, I will return to the Safeway after working out to buy salad greens, and additional lunch materials. Stay tuned for updates.
+
+* Agenda
+
+** TODO Pick a restaurant
+
+** TODO Learn `ledger`
+
+** TODO Workout Back
+
+* Brain Dump
+** Shopping
+- went to the grocery store
+- want to track the expense using a double-entry log
+	-  do so this morning
+- need to return to 
+
+** Gym
+- going to workout the back later this morning, or early afternoon
+
+** Date / Fun
+- coordinating with Ella for drinks after dinner-

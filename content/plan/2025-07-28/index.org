@@ -1,0 +1,45 @@
+#+DATE: 2025-07-28
+#+TITLE: Plan - July 28, 2025
+#+SUMMARY: This morning, I will research startup companies in an effort to answer the question, "Given the market, and my skills, should I found a startup?". Then, I may go to the gym for legs (the squat, specifically). In the early afternoon, I have the option to write code or simply rest for the workday ahead, so long as I set a few mousetraps before I leave.
+
+#+ATTR_HTML: :class agenda
+* Agenda
+
+** TODO Set Mousetrap
+SCHEDULED: <2025-07-28 Mon 14:30>
+
+** TODO Research YC Startups
+DEADLINE: <2025-07-28 Mon 12:00>
+:PROPERTIES:
+:Effort:   10
+:END:
+
+* Brain Dump
+
+- slept in till 10:30AM
+  - 11PM - 12:10AM, 12:15AM - 8:30AM
+  - two hours of laziness in bed
+- the mouse lives
+  - set the traps before leaving for work
+- the gym seems like a bad idea
+  - what else do I have to do?
+  - feel it out
+- continue to look for work
+- continue to develop software
+- what about starting a start-up?
+  - spend 15 minutes looking at what YC is funding
+  - According to Cal Newport, a write should write a book if his idea is "of the moment" or important, and *he* is /the right person/ to ink it. (ie. the world needs to know about highly palatable foods BECAUSE a report came out that we're all fat, and I am the writer to tell the world BECAUSE I am a supertaster.)
+  - The same may be true for startups.
+  - Unfortunately, given my lack of skills, and demonstrated history of sitting on my ass, I'm probably *not* the /right founder for the startup/. But I don't know, and will explore.
+- Logistics:
+  - I've got enough food for today, and tonight
+    - eggs and potato, peppers and onions, bacon for breakfast
+    - tuna salad for lunch
+    - chicken and hot sauce for dinner
+  - I'll have to cook again tomorrow, including chicken and potato
+  - That should hold me through to Thursday, when I'll need to grocery shop Safeway
+    - salad, asparagus, cherry tomato, berries, bananas, canned tuna, salami, proscuitto, ...
+- job search
+  - send a few cold applies (?)
+  - network (?)
+  - I need some kind of approach...

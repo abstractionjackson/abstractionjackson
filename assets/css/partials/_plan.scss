@@ -1,0 +1,139 @@
+#plan {
+  main.max-w-readable.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    max-width: 1000px; // Override the default max-width for plan pages
+
+    // Summary and Over the Weekend sections go to the right column
+    section:nth-child(1), // Summary
+    section:nth-child(2) {
+      // Over the Weekend (if present)
+      grid-column: 2;
+    }
+
+    // Agenda goes to the left column and starts at the top
+    .outline-2.agenda {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: start;
+      padding: 3rem 1.5rem; // Same as Bulma section padding
+    }
+
+    // Brain Dump and other sections go to the right column
+    .outline-2:not(.agenda) {
+      grid-column: 1/3;
+      padding: 3rem 1.5rem; // Same as Bulma section padding
+    }
+  }
+
+  .content {
+    // Style the agenda sections specifically
+    .agenda {
+      // TODO keyword styling
+      .todo.status-todo {
+        background: #fff3cd;
+        color: #856404;
+        border: 1px solid #ffeaa7;
+        border-radius: 4px;
+        padding: 0.2em 0.5em;
+        font-size: 0.85em;
+        font-weight: bold;
+        margin-right: 0.5em;
+        text-transform: uppercase;
+      }
+
+      // DONE keyword styling
+      .todo.status-done {
+        background: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        border-radius: 4px;
+        padding: 0.2em 0.5em;
+        font-size: 0.85em;
+        font-weight: bold;
+        margin-right: 0.5em;
+        text-decoration: line-through;
+        text-transform: uppercase;
+      }
+    }
+
+    // Scheduled and Deadline styling
+    .outline-text-3 {
+      p {
+        // Style paragraphs that contain scheduling info
+        font-size: 0.9em;
+        margin: 0.5rem 0;
+
+        // Default timestamp styling
+        .timestamp {
+          background: #f8f9fa;
+          color: #495057;
+          border: 1px solid #dee2e6;
+          border-radius: 4px;
+          padding: 0.2em 0.5em;
+          font-family: "Monaco", "Menlo", "Ubuntu Mono", monospace;
+          font-size: 0.85em;
+          margin-left: 0.5em;
+        }
+
+        // SCHEDULED styling (applied via JavaScript)
+        &.scheduled-item {
+          color: #0066cc;
+          font-weight: 600;
+
+          .timestamp {
+            background: #e3f2fd;
+            color: #1565c0;
+            border-color: #bbdefb;
+          }
+        }
+
+        // DEADLINE styling (applied via JavaScript)
+        &.deadline-item {
+          color: #d32f2f;
+          font-weight: 600;
+
+          .timestamp {
+            background: #ffebee;
+            color: #c62828;
+            border-color: #ffcdd2;
+          }
+        }
+      }
+    }
+
+    // Brain dump styling
+    .outline-2:not(.agenda) {
+      margin-top: 0;
+
+      h2 {
+        color: #6c757d;
+        font-style: italic;
+      }
+
+      ul {
+        li {
+          margin-bottom: 0.5rem;
+          list-style-type: disc;
+        }
+      }
+    }
+  }
+
+  // Mobile responsiveness - stack columns on smaller screens
+  @media screen and (max-width: 768px) {
+    main.max-w-readable.content {
+      display: block;
+
+      section:nth-child(1),
+      section:nth-child(2),
+      .outline-2.agenda,
+      .outline-2:not(.agenda) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+  }
+}
