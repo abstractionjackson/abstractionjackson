@@ -1,7 +1,7 @@
 #+date: 2025-06-13T14:55:36-07:00
 #+draft: false
 #+featured: t
-#+title: Building a Pixel-Perfect E-Commerce Site with Registration and Booking Integrations
+#+title: Building a Pixel-Perfect E-Commerce Site with Registration and Bookings
 #+categories[]: web_design
 #+tags[]: wordpress gymmaster e-commerce
 #+SUMMARY: The story of how a struggling golf site leveraged WordPress CMS to sink a bevy of new customers. 
