@@ -1,6 +1,18 @@
 {{ define "main" }}
 {{ partial "section/hero" . }}
 <main class="max-w-readable section">
-  {{ partial "section/pageByDateTable" .Site.RegularPages }}
+  {{/* Whitelist of sections to include in the archive. Adjust as needed. */}}
+  {{ $include := dict "note" true "portfolio" true "sketch" true "culinary" true "timepiece" true "shoe" true "plan"
+  nil "workout" nil }}
+
+  {{/* Build a filtered list of pages whose .Section exists in the whitelist */}}
+  {{ $pages := slice }}
+  {{ range .Site.RegularPages }}
+  {{ if (index $include .Section) }}
+  {{ $pages = $pages | append . }}
+  {{ end }}
+  {{ end }}
+
+  {{ partial "section/pageByDateTable" $pages }}
 </main>
 {{ end }}
