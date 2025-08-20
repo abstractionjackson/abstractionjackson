@@ -17,13 +17,6 @@ SCHEDULED: <2025-07-31 Thu 10:30>
 *** Next Steps
 - ask Boris for advice: worth taking again?
 
-** +TODO Workout Lower+
-SCHEDULED: <2025-07-31 Thu 11:30>
-:PROPERTIES:
-:Effort:   60
-:END:
-- pust till tomorrow, or Sunday
-
 ** +TODO Meal Prep Chicken+ 
 SCHEDULED: <1970-07-31 Fri 13:30>
 - push till tomorrow

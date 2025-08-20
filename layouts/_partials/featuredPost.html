@@ -1,27 +1,25 @@
-{{ $featured := first 1 (where .Site.RegularPages
-"Params.featured" "t")
-}}
+{{ $featured := first 1 (where .Site.RegularPages "Params.featured" true) }}
+
 {{ with index $featured 0 }}
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
-<div class="card">
-    <div class="card-header">
+<div class="card" style="width: fit-content">
+    <div id="featuredPost" class="card-header">
         <div class="card-header-title"><span>FEATURED</span></div>
     </div>
     <div class="is-flex-desktop container">
         <div class="card-image p-4">
             {{ partial "previewImage.html" . }}
         </div>
-        <div class="card-content">
+        <div class="card-content" style="max-width: 575px;">
             <div class="media">
                 <div class="media-content">
                     <p class="title is-4 mb-2 is-family-primary"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
-                    <p class="subtitle is-6">{{ $dateHuman }}</p>
+                    <p class="subtitle is-6" style="font-style: italic;">{{ $dateHuman }}</p>
                 </div>
             </div>
-            <div class="content">
+            <div id="featuredPostSummary" class="content">
                 {{ .Summary }}
-
             </div>
             <a href="{{ .RelPermalink }}" class="button is-primary">Read More</a>
             <div class="tags-list my-4">

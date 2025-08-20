@@ -5,15 +5,6 @@
 #+ATTR_HTML: :class agenda
 * Agenda
 
-** TODO Set Mousetrap
-SCHEDULED: <2025-07-28 Mon 14:30>
-
-** TODO Research YC Startups
-DEADLINE: <2025-07-28 Mon 12:00>
-:PROPERTIES:
-:Effort:   10
-:END:
-
 * Brain Dump
 
 - slept in till 10:30AM

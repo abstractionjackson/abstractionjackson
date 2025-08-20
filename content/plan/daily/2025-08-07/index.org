@@ -9,9 +9,6 @@
 
 ** DONE Return Library Books
 
-** TODO Meal Prep Chicken
-SCHEDULED: <2025-08-07 Thu 14:30>
-
 * Brain Dump
 
 - rest day

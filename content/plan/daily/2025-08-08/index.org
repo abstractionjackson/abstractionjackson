@@ -7,9 +7,6 @@
 
 ** TODO Job Search
 
-** TODO Workout Lower
-SCHEDULED: <2025-08-08 Fri 10:30>
-
 ** TODO Rest
 
 * Brain Dump
