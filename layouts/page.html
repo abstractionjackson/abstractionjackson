@@ -1,7 +1,8 @@
 {{ define "main" }}
-<header class="hero is-light">
-    <hgroup class="hero-body max-w-readable">
-        <h2 class="title is-2 is-family-primary">{{ .Title }}</h2>
+<header id="page-header" class="hero is-light">
+    {{ partial "page/headerBackgroundImage.html" . }}
+    <hgroup class="max-w-readable has-background-white">
+        <h2 class="title is-2 mb-1 is-family-primary">{{ .Title }}</h2>
         <p class="subtitle">
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
             {{ $dateHuman := .Date | time.Format ":date_long" }}

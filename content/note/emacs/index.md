@@ -1,10 +1,16 @@
----
-title: "Using AI and Emacs to Build a Values-Based Agenda"
-date: 2025-08-20T09:33:52-07:00
-draft: false
-featured: true
-summary: As an Emacs user who doesn't know Lisp, I rely on LLMs to add features to my agenda tools. The agenda views that ship with Emacs Org Mode offer a bounty of features in their own right, and I would reccomend those interested in productivty and time management to investigate the software. However, the authors of Org Mode could not possibly have predicted my idiosyncratic productivity needs, and so I am required to build them myself. Fortunately, Emacs is highly extensible; unfortunately, it is written in Lisp.
----
++++
+title = "Using AI and Emacs to Build a Values-Based Agenda"
+date = 2025-08-20T09:33:52-07:00
+draft = false
+featured = true
+summary = "As an Emacs user who doesn't know Lisp, I rely on LLMs to add features to my agenda tools. The agenda views that ship with Emacs Org Mode offer a bounty of features in their own right, and I would reccomend those interested in productivty and time management to investigate the software. However, the authors of Org Mode could not possibly have predicted my idiosyncratic productivity needs, and so I am required to build them myself. Fortunately, Emacs is highly extensible; unfortunately, it is written in Lisp."
+tags = ["emacs", "AI", "Org", "productivity", "Lisp", "agenda", "Cal Newport"]
+blurHeaderBg = true
+
+[[resources]]
+name = "headerBackgroundImage"
+src = "images/headerBackground.png"
++++
 
 As an Emacs user who doesn't know Lisp, I rely on LLMs to add features to my agenda tools. The agenda views that ship with Emacs Org Mode offer a bounty of features in their own right, and I would reccomend those interested in productivty and time management to investigate the software. However, the authors of Org Mode could not possibly have predicted my idiosyncratic productivity needs, and so I am required to build them myself. Fortunately, Emacs is highly extensible; unfortunately, it is written in Lisp.
 

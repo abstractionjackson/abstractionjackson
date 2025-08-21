@@ -1,0 +1,13 @@
+{{/*
+Renders a figure with the page's headerBackgroundImage resource.
+Expects context: dict with "page" and "blur" keys.
+Usage: {{ partial "page/headerBackgroundImage.html" (dict "page" . "blur" true) }}
+*/}}
+{{ $blur := .Params.blurHeaderBg }}
+{{ $img := .Resources.GetMatch "headerBackgroundImage*" }}
+{{ if $img }}
+<figure id="page-header-background" class="header-background-image">
+    <img src="{{ $img.RelPermalink }}" alt="{{ .Title }} header background" {{ if $blur }} style="filter: blur(8px);" {{
+        end }}>
+</figure>
+{{ end }}
