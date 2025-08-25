@@ -10,6 +10,9 @@ blurHeaderBg = true
 [[resources]]
 name = "headerBackgroundImage"
 src = "images/landing.png"
+[[resources]]
+name = 'preview'
+src = 'images/preview.png'
 +++
 
 {{< figure src="images/landing.png" alt="a screen capture of the Launch Club Golf website landing on desktop" caption="Landing Page: Desktop Layout" >}}

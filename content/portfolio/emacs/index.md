@@ -10,6 +10,9 @@ blurHeaderBg = true
 [[resources]]
 name = "headerBackgroundImage"
 src = "images/headerBackground.png"
+[[resources]]
+name = 'preview'
+src = 'images/preview.png'
 +++
 
 As an Emacs user who doesn't know Lisp, I rely on LLMs to add features to my agenda tools. The agenda views that ship with Emacs Org Mode offer a bounty of features in their own right, and I would reccomend those interested in productivty and time management to investigate the software. However, the authors of Org Mode could not possibly have predicted my idiosyncratic productivity needs, and so I am required to build them myself. Fortunately, Emacs is highly extensible; unfortunately, it is written in Lisp.
