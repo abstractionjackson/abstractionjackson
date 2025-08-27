@@ -1,4 +1,0 @@
-+++
-title = "Workout"
-layout = 'workout'
-+++

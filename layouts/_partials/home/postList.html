@@ -1,0 +1,12 @@
+{{ $featured := index . "featured" }}
+{{ $pages := index . "pages" }}
+
+{{ $otherPosts := where $pages "Permalink" "ne" $featured.Permalink }}
+<ul class="post">
+    {{ range sort $otherPosts "Date" "desc" }}
+    <li>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006"
+            }}</time>
+    </li>
+    {{ end }}
+</ul>

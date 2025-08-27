@@ -1,6 +1,4 @@
-{{ $featured := first 1 (where .Site.RegularPages "Params.featured" true) }}
-
-{{ with index $featured 0 }}
+{{ with . }}
 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
 {{ $dateHuman := .Date | time.Format ":date_long" }}
 <div id="featuredPost" class="card" style="width: fit-content">

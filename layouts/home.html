@@ -1,24 +1,9 @@
 {{ define "main" }}
-<div id="home">
-  {{/* <section class="hero is-primary is-halfheight">
-    <div class="hero-body hero-body-max-width">
-      <div class="container">
-        <p>
-          <span class="title">
-            San Francisco Software Developer Jackson Galan
-          </span>
-          <span class="subtitle">builds robust web sites and applications at <a class="has-text-primary-invert"
-              href="http://goldengatesoftwaresolutions.com" target="_blank">Golden Gate Software Solutions</a>. Here,
-            you'll find his posts
-            about web development, technology, and more.</span>
-        </p>
-      </div>
-    </div>
-  </section> */}}
-  <section class="section">
-    <main>
-      {{ partial "featuredPost.html" . }}
-    </main>
-  </section>
+{{ $featured := index (first 1 (where .Site.RegularPages "Params.featured" true)) 0 }}
+<div id="home" class="section">
+  <div class="container">
+    {{ partial "featuredPost.html" $featured }}
+  </div>
+  {{/* {{ partial "home/postList.html" (dict "featured" $featured "pages" .Site.RegularPages) }} */}}
 </div>
 {{ end }}
