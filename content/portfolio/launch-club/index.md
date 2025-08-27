@@ -7,6 +7,7 @@ categories = ["web_design"]
 tags = ["wordpress", "gymmaster", "e-commerce", "js", "cs"]
 summary = "The story of how a struggling golf site leveraged WordPress CMS to sink a bevy of new customers."
 blurHeaderBg = true
+landing = true
 [[resources]]
 name = "headerBackgroundImage"
 src = "images/landing.png"

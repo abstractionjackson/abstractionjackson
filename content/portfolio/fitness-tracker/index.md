@@ -8,7 +8,7 @@ tags = ['python', 'cli', 'data', 'JSON']
 summary = '''
 As a self-described jock who codes, I was not satisfied by the apps named in our ice-breaker, and set about to build my own fitness tracker, a CLI focused on helping resistance trainers (read: other jocks) better understand their performance, and strategize based on effectively-captured data.
 '''
-
+landing = true
 [[resources]]
 name = 'preview'
 src = 'images/preview.png'
