@@ -1,6 +1,8 @@
 {{ $featured := index . "featured" }}
 {{ $pages := index . "pages" }}
 
+{{ $pages := where $pages ".Params.landing" "!=" nil }}
+
 {{ $otherPosts := where $pages "Permalink" "ne" $featured.Permalink }}
 
 <ul class="post grid  container is-col-min-16 is-gap-4 mt-6">
