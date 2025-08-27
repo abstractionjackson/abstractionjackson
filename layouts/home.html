@@ -4,6 +4,6 @@
   <div class="container">
     {{ partial "featuredPost.html" $featured }}
   </div>
-  {{/* {{ partial "home/postList.html" (dict "featured" $featured "pages" .Site.RegularPages) }} */}}
+  {{ partial "home/postList.html" (dict "featured" $featured "pages" .Site.RegularPages) }}
 </div>
 {{ end }}

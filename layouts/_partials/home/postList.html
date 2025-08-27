@@ -2,11 +2,11 @@
 {{ $pages := index . "pages" }}
 
 {{ $otherPosts := where $pages "Permalink" "ne" $featured.Permalink }}
-<ul class="post">
+
+<ul class="post grid  container is-col-min-16 is-gap-4 mt-6">
     {{ range sort $otherPosts "Date" "desc" }}
-    <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a> - <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006"
-            }}</time>
+    <li class="cell">
+        {{ partial "postCard" . }}
     </li>
     {{ end }}
 </ul>
