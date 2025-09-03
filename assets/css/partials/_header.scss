@@ -1,0 +1,31 @@
+// Header tweaks: reduce top nav height
+#header {
+  #top-nav.navbar {
+    padding: 0.5rem 1rem !important; // override Bulma utility p-6
+    min-height: 3rem; // smaller overall height
+  }
+
+  // Shrink brand logo image
+  .navbar-brand .brand-logo img {
+    max-height: 28px;
+    height: 28px;
+    width: auto;
+  }
+
+  // Tighten vertical padding on navbar items
+  .navbar-item {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  // Keep burger aligned with reduced height
+  .navbar-burger {
+    height: 3rem;
+  }
+
+  // Optional: reduce gap on right aligned list
+  #mainNavbarMenuList.navbar-end .navbar-item {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

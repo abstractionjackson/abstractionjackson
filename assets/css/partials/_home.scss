@@ -18,9 +18,9 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  display: flex;
-  align-items: flex-start; // content near top
-  justify-content: flex-start;
+    display: flex;
+    align-items: flex-start; // content near top
+    justify-content: flex-start;
 
     &::before {
       // darken for text readability
@@ -42,7 +42,7 @@
       color: #fff;
       padding: 3rem 2rem; // increased padding for better spacing
       max-width: 900px;
-      
+
       // Larger, responsive title size for featured hero
       h1.title {
         font-size: clamp(2rem, 5vw, 3.5rem);
