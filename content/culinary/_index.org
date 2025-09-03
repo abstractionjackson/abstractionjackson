@@ -1,9 +1,0 @@
-#+TITLE: Culinary
-#+DATE: 2025-06-25T08:54:39-07:00
-#+DESCRIPTION: 
-#+CATEGORIES: 
-#+DRAFT: true
-
-Cooking is a fact of life. Some people eat to live; Jackson, he lives to eat. As such, the kitchen in his studio apartment sees a good deal of edible and occasionally *successful* products leave for table. This includes the five or six *vital daily meals* of /breakfast, brunch, lunch, supper, dinner, and dessert/.
-
-The posts in this section document learnings and wins related to food, wine, dining, nutrition, etc.
