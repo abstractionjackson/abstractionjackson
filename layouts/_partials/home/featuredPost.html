@@ -1,0 +1,19 @@
+{{ with . }}
+{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+{{ $dateHuman := .Date | time.Format ":date_long" }}
+{{ $img := .Resources.GetMatch "preview" }}
+<section id="featuredPost" class="featured-hero" {{ with $img }}style="background-image: url('{{ .RelPermalink }}');" {{
+    end }}>
+    <div class="featured-content">
+        <h1 class="title is-2 is-family-primary">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h1>
+        <p class="subtitle is-6">
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </p>
+        <div class="summary content">
+            {{ .Summary }}
+        </div>
+    </div>
+</section>
+{{ end }}

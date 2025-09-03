@@ -1,9 +1,7 @@
 {{ define "main" }}
 {{ $featured := index (first 1 (where .Site.RegularPages "Params.featured" true)) 0 }}
-<div id="home" class="section">
-  <div class="container">
-    {{ partial "featuredPost.html" $featured }}
-  </div>
+<div id="home">
+  {{ partial "home/featuredPost.html" $featured }}
   {{ partial "home/postList.html" (dict "featured" $featured "pages" .Site.RegularPages) }}
 </div>
 {{ end }}
