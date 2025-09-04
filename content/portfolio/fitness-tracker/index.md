@@ -2,9 +2,9 @@
 date = 2025-08-25T13:44:50-07:00
 draft = false
 featured = false
-title = "Building a Python CLI for Resistance Exercise Performance Tracking"
+title = "Building a Python CLI for Resistance Exercise Tracking"
 categories = ['development']
-tags = ['python', 'cli', 'data', 'JSON']
+tags = ['python', 'cli', 'data', 'JSON', 'Emacs',]
 summary = '''
 As a self-described jock who codes, I was not satisfied by the apps named in our ice-breaker, and set about to build my own fitness tracker, a CLI focused on helping resistance trainers (read: other jocks) better understand their performance, and strategize based on effectively-captured data.
 '''
