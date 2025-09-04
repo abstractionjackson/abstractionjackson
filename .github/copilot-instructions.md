@@ -1,26 +1,20 @@
-# Copilot Instructions
+# Project Features
 
-## Hugo Site Structure
+- The project is a static website for a software engineer's blog.
+- The blog is organized into sections. Posts to a given section may have one or more categories, and one or more tags.
+- In addition to the blog, the site may have other pages, like About, or Contact.
 
-This is a Hugo static site without a theme.
-Styles are located in `assets/css/` with the main file at `assets/css/main.scss` and partials in `assets/css/partials/`.
-Layouts are located in `layouts/` and include partials and shortcodes.
-Content appears at the site level in `content/` and is organized by section.
+# Project Technologies
 
-## GitHub Repository Link Feature
+- The site is built on Hugo. Therefore, Hugo's file system conventions apply, and sections appear under content/section-name.
+- Content is written in Markdown, and contains front matter in TOML format.
+- Structure posts as an index.md file under a folder named for the post's slug, under the section folder.
+- The site uses Sass in .scss files for styling. The styles are modularized into partials that map to Hugo's layouts (like base, home, single, list, etc). Partials for sitewide styles exist, as well.
+- The site also uses Bulma CSS, and customizations appear under the Sass partial, "\_bulma.scss". When adding, or otherwise applying styles, always prefer to use Bulma.
+- JavaScript is used when necessary.
 
-Content front matter can include a `repo` parameter to display GitHub repository links:
+# Style Guidelines
 
-- Org-mode files: `#+repo: https://github.com/username/repo`
-- Markdown files: `repo: https://github.com/username/repo` in YAML front matter
-- Renders as GitHub octocat icon with "View on GitHub" text
-- Appears after tags in post/page headers
-- Implementation in `themes/jump/layouts/_partials/github-repo-link.html`
-
-## Content Types
-
-- Portfolio items in `content/portfolio/` with archetype in `archetypes/portfolio/`
-- Dreams in `content/dream/` with archetype in `archetypes/dream/`
-- Notes in `content/note/`
-- Sketches in `content/sketch/`
-- Culinary content in `content/culinary/`
+- Mobile-first, responsive design.
+- Emphasis on legibilitiy.
+-
