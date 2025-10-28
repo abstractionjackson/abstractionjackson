@@ -16,7 +16,7 @@ name = 'preview'
 src = 'images/preview.png'
 +++
 
-{{< figure src="images/landing.png" alt="a screen capture of the Launch Club Golf website landing on desktop" caption="Landing Page: Desktop Layout" >}}
+{{< figure src="images/lc_rebuild_demo.gif" caption="Demo of a landing page in mobile viewport dimensions" >}}
 
 # E-Commerce Website Maintenance: Integrations, Content Management, and Performance Optimizations for Launch Club Golf
 
