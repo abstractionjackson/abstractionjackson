@@ -1,6 +1,14 @@
 +++
 title = "About"
-draft = true
+draft = false
+layout = "about"
+blurb = """
+San Francisco Software Engineer **Jackson Galan** reserves the right to code, so long as it's in Emacs.
+After a co-worker managed to get him to understand [recommender systems](https://en.wikipedia.org/wiki/Recommender_system), he dusted off a pair of fingerless gloves, and began to fix the internet.
+His first gig was aptly at a startup, where he wore mostly the front-end hat (mostly), and built a social event-planning app that would scale to 10,000+ MAU. 📈
+In the years since, the projects have changed, but the core technolgies have stayed the same; the methodologies remain agile, and the backends, written in JavaScript.
+Outside of the development environment, Jackson is an avid cyclist (same gloves!) and voracious reader. Check out the [blog](/blog) for news, join a [bike ride](https://www.strava.com/athletes/7088902) (gloves: 100% mandatory), or reach out [to say hello](/social).
+"""
 +++
 
 <!-- Outline -->
@@ -25,10 +33,5 @@ draft = true
     - in the money
 -->
 
-# The Tekka-Maki Revelation
+what
 
-I have always been interested in computers. My generation was the first to grow up online, and out of all my childhood friends, only Paul and I had a PC, and Mac, respectively, in our families. I'm leaving out Maya and the Rooftop Elementary Computer Center staff, but that is a story for another time.
-
-On Paul's 11th birthday, we sat on the beige carpet of his father's 37th and Quintara apartment, and downloaded all the hits from rap albums too coarse ("Parental Guidance: Explicit Content") for my parents to abide. Thanks to P2P file sharing applications like Napster, Limewire, and Kazaa, the party could listen to the uncensored version of our favorite songs from 106.1 KMEL Jams and WILD 94.9, then -- because Paul had a writable CD drive -- we could take home our 10 favorite tracks in a jewel case, complete with bespoke cover art, and a tracklist. Over the years, I would continue to buy CDs, but I would bootleg many, many more.
-
-Free stuff for the youth wasn't all, however. Towards

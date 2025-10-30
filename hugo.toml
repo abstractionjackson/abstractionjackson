@@ -24,6 +24,10 @@ unsafe = true
 name = 'Portfolio'
 pageRef = '/portfolio'
 weight = 10
+[[menus.main]]
+name = "About"
+pageRef = "/about"
+weight = 15
 
 
 [params]

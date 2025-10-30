@@ -1,0 +1,51 @@
+{{ define "main" }}
+<style>
+  .hero {
+    padding: 1rem;
+  }
+  .avatar {
+    overflow: hidden;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    margin-bottom: 1rem;
+    box-shadow: -3px 4px 3px;
+  }
+  .avatar > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .avatar#hr-yearbook {
+    background-color: hsl(240deg 1.35% 43.73%);
+  }
+  .avatar#hr-yearbook {
+    object-position: -50px -250px;
+  }
+  .blurb a {
+    text-decoration: underline;
+  }
+  @media (min-width: 768px) {
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .avatar {
+      max-height: 500px;
+      margin: auto;
+    }
+    .blurb.container {
+      align-content: center;
+      padding: 3rem;
+    }
+  }
+</style>
+<section class="hero">
+  {{ with resources.GetMatch "images/avatar.*" }}
+  <fugure class="avatar" id="hr-yearbook">
+    <img alt="" src="{{ .RelPermalink }}" />
+  </fugure>
+  {{ end }} {{ with .Params.blurb }}
+  <article class="blurb container">{{ . | markdownify }}</article>
+  {{ end }}
+</section>
+{{ end }}
