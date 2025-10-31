@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/abstractionjackson/abstractionjackson#readme",
   "dependencies": {
+    "alpinejs": "^3.15.1",
     "bulma": "^1.0.4"
   }
 }

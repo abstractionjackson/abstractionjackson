@@ -1,0 +1,32 @@
+<style>
+  .banner {
+    background-image: linear-gradient(to right, white, lightyellow);
+    padding: 0.5rem 0;
+  }
+  .banner > .content {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .banner > .content > .cta {
+    text-decoration: underline;
+  }
+  .banner > button.dismiss {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    background: white;
+    height: fit-content;
+    width: fit-content;
+  }
+</style>
+
+<section class="banner" x-data="banner" x-show="show" x-transition>
+  <p class="content">
+    Hiring? Jackson is <em>actively looking for a new role</em>! Please, do
+    <a href="/contact" class="cta">Reach out</a>
+  </p>
+  <button class="dismiss" x-on:click="dismiss">Ⅹ</button>
+</section>
