@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ site.Title }}</title>
+        {{ with resources.Get "normalize.css" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ end }}
+    </head>
+    <body>
+        {{ block "main" . }} {{ end }}
+    </body>
+</html>

@@ -1,9 +1,11 @@
-#+title: abstractionjackson
-#+author: abstractionjackson
-#+description: San Francisco Web Development Consultant
++++
+date = '2026-01-06T12:54:18-08:00'
+draft = false
+title = 'abstractionjackson'
++++
 
 Jackson is actively seeking new opportunities, so please reach out via
-DM or [[mailto:hire@abstractionjackson.com][email]] to discuss.
+DM or [email](mailto:hire@abstractionjackson.com) to discuss.
 
 Use this site to view examples of his work, learn about his
 professional history, and discover his extracurricular functionality
