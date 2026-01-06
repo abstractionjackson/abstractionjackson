@@ -1,0 +1,41 @@
+:root {
+    color-scheme: light dark;
+    --dark: hsl(0, 0%, 13%);
+    --light: hsl(0, 0%, 96%);
+    --blue: hsl(216, 100%, 50%);
+    --orange: hsl(36, 100%, 55%);
+}
+
+body {
+    font-family: sans-serif;
+    background-color: light-dark(var(--light), var(--dark));
+    color: light-dark(var(--dark), var(--light));
+    max-width: 768px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+a {
+    color: light-dark(var(--blue), var(--orange));
+    text-decoration: none;
+}
+
+/*Components*/
+
+body > header > nav {
+    margin-top: 4rem;
+    padding: 0 2rem;
+    border-bottom: 1px solid light-dark(var(--dark), var(--light));
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    @media (width > 768px) {
+        display: flex;
+        justify-content: space-between;
+        > ul {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}

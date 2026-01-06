@@ -7,8 +7,29 @@
         {{ with resources.Get "normalize.css" }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" />
         {{ end }}
+        {{ with resources.Get "style.css" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ end }}
+        <script src="//unpkg.com/alpinejs" defer></script>
     </head>
     <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">{{ site.Title }}</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="/resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         {{ block "main" . }} {{ end }}
     </body>
 </html>

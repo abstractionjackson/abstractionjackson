@@ -1,0 +1,62 @@
+{{ $title := .Get "title" }}
+{{ $contract := .Get "contract" }}
+{{ $employer := .Get "employer" }}
+{{ $start :=.Get "start"}}
+{{ $end := or (.Get "end") "present" }}
+{{ $location := .Get "location" }}
+{{ $remote := .Get "remote" }}
+{{ $highlights := .Inner }}
+
+<article class="resume experience">
+    <header>
+        <hgroup>
+            <h1>{{ $title }} {{ if $contract }}(Contract){{ end }}</h1>
+            <p>{{ $employer }}</p>
+        </hgroup>
+        <hgroup
+            x-data="{
+                today: new Date(),
+                start: new Date('{{ $start }}'),
+                _end: '{{ $end }}',
+                init() {
+                    this.end = this._end === 'present' ? this.today : new Date(this._end);
+                },
+                formatDuration(start, end) {
+                    // Calculate the total difference in years and months
+                    let years = end.getFullYear() - start.getFullYear();
+                    let months = end.getMonth() - start.getMonth();
+
+                    if (months < 0) {
+                        years--;
+                        months += 12;
+                    }
+
+                    // Construct the result string based on the calculated years and months
+                    let result = [];
+                    if (years > 0) {
+                        result.push(years + 'yr');
+                    }
+
+                    if (months > 0 || (years === 0 && months === 0)) {
+                        result.push(months + 'mo');
+                    }
+
+                    return result.join(' ');
+                }
+            }"
+        >
+            <time
+                datetime="start.toISOString()"
+                x-text="start.toLocaleDateString()"
+            ></time>
+            -
+            <time
+                datetime="end"
+                x-text="end === today ? 'Present' : end.toLocaleDateString()"
+            ></time>
+            <span x-text="'(' + formatDuration(start, end) + ')'"></span>
+            <address>{{ $location }}{{ if $remote }} (Remote){{ end }}</address>
+        </hgroup>
+    </header>
+    <main>{{ $highlights | markdownify }}</main>
+</article>
