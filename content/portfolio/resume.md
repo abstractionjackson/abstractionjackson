@@ -1,6 +1,6 @@
 +++
 date = '2026-01-06T14:32:51-08:00'
-draft = true
+draft = false
 title = 'Build a Modular Markdown Resume with Hugo Shortcodes, AI, and AlpineJS'
 +++
 

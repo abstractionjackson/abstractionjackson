@@ -1,3 +1,14 @@
 baseURL = 'https://abstractionjackson.github.io/abstractionjackson'
 languageCode = 'en-us'
 title = 'abstractionjackson'
+
+[menu]
+[[menu.main]]
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 1
+
+[[menu.main]]
+    name = "Resume"
+    url = "/resume"
+    weight = 2

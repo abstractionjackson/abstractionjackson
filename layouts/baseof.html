@@ -17,16 +17,15 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="/">{{ site.Title }}</a>
+                        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
                     </li>
                 </ul>
                 <ul>
+                    {{ range site.Menus.main }}
                     <li>
-                        <a href="/portfolio">Portfolio</a>
+                        <a href="{{ .URL }}">{{ .Name }}</a>
                     </li>
-                    <li>
-                        <a href="/resume">Resume</a>
-                    </li>
+                    {{ end }}
                 </ul>
             </nav>
         </header>
