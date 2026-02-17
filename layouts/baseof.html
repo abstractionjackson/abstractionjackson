@@ -28,6 +28,12 @@
         {{ with resources.Get "style.css" }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" />
         {{ end }}
+        {{ with resources.Get "header-animation.css" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ end }}
+        {{ with resources.Get "header-animation.js" }}
+        <script src="{{ .RelPermalink }}"></script>
+        {{ end }}
         <script src="//unpkg.com/alpinejs" defer></script>
     </head>
     <body>

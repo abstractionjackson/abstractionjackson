@@ -1,7 +1,9 @@
 <nav>
   <ul>
     <li>
-      <a href="{{ site.BaseURL }}"><span class="branding"><strong>{{ site.Title | upper}}</strong></span></a>
+      <a href="{{ site.BaseURL }}">
+	{{ partial "branding" . }}
+      </a>
     </li>
   </ul>
   <ul>
