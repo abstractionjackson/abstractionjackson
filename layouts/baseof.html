@@ -31,8 +31,14 @@
         {{ with resources.Get "header-animation.css" }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" />
         {{ end }}
+        {{ with resources.Get "hero-adjective.css" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" />
+        {{ end }}
         {{ with resources.Get "header-animation.js" }}
         <script src="{{ .RelPermalink }}"></script>
+        {{ end }}
+        {{ with resources.Get "hero-adjective.js" }}
+        <script src="{{ .RelPermalink }}" defer></script>
         {{ end }}
         <script src="//unpkg.com/alpinejs" defer></script>
     </head>

@@ -1,0 +1,14 @@
+.hero h1 .adjective {
+    display: block;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hero h1 .adjective.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero h1 .adjective.hidden {
+    opacity: 0;
+    transform: translateY(-0.4em);
+}

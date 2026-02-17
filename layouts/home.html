@@ -2,11 +2,11 @@
 <section class="hero">
   {{ with  .Site.Data.home.hero }}
   <header>
+    <img src="/avatar.jpeg" alt="Jackson Galan" class="hero-avatar" />
     <hgroup>
-      <h1>{{ .heading }}</h1>
-      <p>{{ .subheading | markdownify }}</p>
+      <h1><span class="adjective">San Francisco</span> <span class="noun">Software Engineer</span></h1>
     </hgroup>
-    
+    <p class="hero-subheading">{{ .subheading | markdownify }}</p>
   </header>
   {{ end }}
 </section>
