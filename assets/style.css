@@ -140,12 +140,31 @@ section.hero {
     }
 }
 
-article.featured {
+section.featured-project {
+    max-width: 65ch;
+    margin: 3rem auto;
+    padding: 0 2rem;
     > header {
-	hgroup.title.date {
-	    time {
-		color: hsl(from var(--color-primary) h s l / 0.5);
-	    }
+	margin-bottom: 1rem;
+	.badge {
+	    display: inline-block;
+	    font-size: 0.75rem;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    letter-spacing: 0.08em;
+	    color: var(--light);
+	    background-color: var(--brand-red);
+	    padding: 0.25rem 0.6rem;
+	    border-radius: 0.25rem;
+	    margin-bottom: 0.5rem;
+	}
+	h2 {
+	    margin: 0;
+	    font-size: 1.75rem;
+	}
+	time {
+	    font-size: 0.875rem;
+	    color: hsl(from var(--color-primary) h s l / 0.5);
 	}
     }
     img {

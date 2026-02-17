@@ -10,10 +10,8 @@
   </header>
   {{ end }}
 </section>
-<section class="featured">
 {{ $portfolioPage := site.GetPage "portfolio" }}
 {{ $featuredPages := where $portfolioPage.Pages "Params.featured" true }}
 {{ $featuredPage := index $featuredPages 0 }}
 {{ partial "featured" $featuredPage }}
-</section>
 {{ end }}
