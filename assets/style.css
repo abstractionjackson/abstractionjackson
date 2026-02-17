@@ -50,6 +50,13 @@ body {
     }
 }
 
+.content {
+    max-width: 65ch;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
 .group.text.icon {
     display: flex;
     align-items: center;
