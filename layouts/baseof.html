@@ -31,22 +31,11 @@
         <script src="//unpkg.com/alpinejs" defer></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
-                    </li>
-                </ul>
-                <ul>
-                    {{ range site.Menus.main }}
-                    <li>
-                        <a href="{{ .URL }}">{{ .Name }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </nav>
-        </header>
-        {{ block "main" . }} {{ end }}
-    </body>
+      <header>
+	{{ partial "nav" . }}
+      </header>
+      <main>
+  {{ block "main" . }} {{ end }}
+      </main>
+      </body>
 </html>

@@ -1,0 +1,17 @@
+<article class="featured">
+  <header>
+    <hgroup class="title date">
+      <a href="{{ .RelPermalink }}">
+	<h1>
+	  {{ .Title }}
+	</h1>
+      </a>
+      <time>{{ .Date.Format "Jan 02, 2006" }}</time>
+    </hgroup>
+  </header>
+  <p class="summary">{{ .Summary }}</p>
+  {{ with .Resources.GetMatch "featured" }}
+  {{ $img := .Process "r270" }}
+  <img alt="" src="{{ $img.RelPermalink }}"/>
+  {{ end }}
+</article>

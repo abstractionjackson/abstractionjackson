@@ -1,0 +1,14 @@
+<nav>
+  <ul>
+    <li>
+      <a href="{{ site.BaseURL }}"><span class="branding"><strong>{{ site.Title | upper}}</strong></span></a>
+    </li>
+  </ul>
+  <ul>
+    {{ range site.Menus.main }}
+    <li>
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>

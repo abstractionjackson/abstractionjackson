@@ -1,1 +1,19 @@
-{{ define "main" }} {{ .Content }} {{ end }}
+{{ define "main" }}
+<section class="hero">
+  {{ with  .Site.Data.home.hero }}
+  <header>
+    <hgroup>
+      <h1>{{ .heading }}</h1>
+      <p>{{ .subheading | markdownify }}</p>
+    </hgroup>
+    
+  </header>
+  {{ end }}
+</section>
+<section class="featured">
+{{ $portfolioPage := site.GetPage "portfolio" }}
+{{ $featuredPages := where $portfolioPage.Pages "Params.featured" true }}
+{{ $featuredPage := index $featuredPages 0 }}
+{{ partial "featured" $featuredPage }}
+</section>
+{{ end }}

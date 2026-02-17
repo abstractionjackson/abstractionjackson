@@ -1,41 +1,80 @@
 :root {
     color-scheme: light dark;
     --dark: hsl(0, 0%, 13%);
-    --light: hsl(0, 0%, 96%);
+    --light: hsl(0, 0%, 100%);
     --blue: hsl(216, 100%, 50%);
     --orange: hsl(36, 100%, 55%);
+    --color-primary: light-dark(var(--dark), var(--light));
+    --bg-primary: light-dark(var(--light), var(--dark));
+}
+
+a {
+    text-decoration: none;
+    color: light-dark(var(--dark), var(--light));
+    &:hover {
+	color: light-dark(var(--blue), var(--orange));
+    }
 }
 
 body {
     font-family: sans-serif;
-    background-color: light-dark(var(--light), var(--dark));
-    color: light-dark(var(--dark), var(--light));
-    max-width: 768px;
+    background-color: var(--bg-primary);
+    color: var(--color-primary);
     margin: auto;
     line-height: 1.5;
-}
-
-a {
-    color: light-dark(var(--blue), var(--orange));
-    text-decoration: none;
-}
-
-/*Components*/
-
-body > header > nav {
-    margin-top: 4rem;
-    padding: 0 2rem;
-    border-bottom: 1px solid light-dark(var(--dark), var(--light));
-    ul {
-        list-style: none;
-        padding: 0;
+    > header {
+	> nav {
+	    max-width: 768px;
+	    margin: auto;
+	    padding: 0 2rem;
+	    /* border-bottom: 1px solid light-dark(var(--dark), var(--light)); */
+	    ul {
+		list-style: none;
+		padding: 0;
+		align-items: center;;
+	    }
+	    @media (width > 768px) {
+		display: flex;
+		justify-content: space-between;
+		> ul {
+		    display: flex;
+		    gap: 1rem;
+		}
+	    }
+	}
     }
-    @media (width > 768px) {
-        display: flex;
-        justify-content: space-between;
-        > ul {
-            display: flex;
-            gap: 1rem;
-        }
+    > main {
+	max-width: 768px;
+	margin: auto;
+    }
+}
+
+.group.text.icon {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+section.hero {
+    border-top: 1px solid var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
+    a {
+	text-decoration: underline;
+    }
+    h1, p {
+	font-size: 12pt
+    }
+}
+
+article.featured {
+    > header {
+	hgroup.title.date {
+	    time {
+		color: hsl(from var(--color-primary) h s l / 0.5);
+	    }
+	}
+    }
+    img {
+	max-width: 100%;
     }
 }
