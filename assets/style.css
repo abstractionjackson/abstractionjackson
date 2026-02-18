@@ -28,6 +28,9 @@ body {
         top: 0;
         z-index: 10;
         background-color: var(--bg-primary);
+        a:hover {
+            color: light-dark(hsl(0, 0%, 40%), hsl(0, 0%, 80%));
+        }
         > nav {
             padding: 0 2rem;
             /* border-bottom: 1px solid light-dark(var(--dark), var(--light)); */
