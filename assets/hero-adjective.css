@@ -1,6 +1,10 @@
 .hero h1 .adjective {
+    width: fit-content;
+    height: fit-content;
     display: block;
-    transition: opacity 0.4s ease, transform 0.4s ease;
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
 }
 
 .hero h1 .adjective.visible {
@@ -11,4 +15,52 @@
 .hero h1 .adjective.hidden {
     opacity: 0;
     transform: translateY(-0.4em);
+}
+
+.hero h1 .adjective .hanging-letter {
+    display: inline-block;
+    transform-origin: bottom left;
+    animation: hang-and-straighten 1.2s linear forwards;
+}
+
+@keyframes hang-and-straighten {
+    0% {
+        transform: rotate(87deg);
+    }
+    10% {
+        transform: rotate(105deg);
+    }
+    20% {
+        transform: rotate(82deg);
+    }
+    30% {
+        transform: rotate(97deg);
+    }
+    40% {
+        transform: rotate(91deg);
+    }
+    50% {
+        transform: rotate(94deg);
+    }
+    60% {
+        transform: rotate(89deg);
+    }
+    70% {
+        transform: rotate(92deg);
+    }
+    75% {
+        transform: rotate(45deg);
+    }
+    80% {
+        transform: rotate(12deg);
+    }
+    85% {
+        transform: rotate(3deg);
+    }
+    90% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
