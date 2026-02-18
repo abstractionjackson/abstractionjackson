@@ -1,6 +1,6 @@
 {
-    "hero": {
-	"heading": "San Francisco Software Engineer",
-	"subheading": "Currently building a verified platform for SMBs, Jackson is a software engineer, technology consultant, and full-capture proponent. This site presents his writing on software, including [personal projects](/portfolio),, and you can see more [@GitHub](https://github.com/abstractionjackson), or reach out [via email](mailto:hello@abstractionjackson.com) to say hi."
-    }
+  "hero": {
+    "heading": "San Francisco Software Engineer",
+    "subheading": "A software engineer, freelance web developer, and computer technologiest, Jackson is currently building a verified platform for SMBs. His previous engingeering roles include front-end development at AWS, backend development at ADT, and an instructional residency at Operation Spark. Check out his [personal projects](/portfolio) or visit [abstractionjackson@GitHub](https://github.com/abstractionjackson) to see the code he has written. Reach him via [email](mailto:hello@abstractionjackson.com)"
+  }
 }
