@@ -5,6 +5,9 @@
     transition:
         opacity 0.4s ease,
         transform 0.4s ease;
+    @media (width <= 768px) {
+        margin: auto;
+    }
 }
 
 .hero h1 .adjective.visible {
