@@ -242,3 +242,24 @@ section.featured-project {
         image-orientation: from-image;
     }
 }
+
+.site-footer {
+    margin-top: 4rem;
+    border-top: 1px solid hsl(from var(--color-primary) h s l / 0.15);
+    background-color: light-dark(hsl(0, 0%, 97%), hsl(0, 0%, 9%));
+    color: light-dark(var(--dark), var(--light));
+}
+
+.site-footer .footer-inner {
+    max-width: 75ch;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    text-align: center;
+}
+
+.site-footer .footer-copy {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-size: 0.95rem;
+}
