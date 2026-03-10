@@ -60,6 +60,32 @@ body {
     box-sizing: border-box;
 }
 
+.content figure {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.content figure figcaption {
+    font-size: 0.85rem;
+    color: hsl(from var(--color-primary) h s l / 0.65);
+    margin-top: 0.5rem;
+}
+
+.content img,
+.content picture,
+.content video,
+.content iframe {
+    display: block;
+    max-width: 100%;
+    width: min(100%, 60rem);
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 0.75rem;
+    border: 1px solid hsl(from var(--color-primary) h s l / 0.1);
+    box-shadow: 0 1.5rem 3rem hsl(0 0% 0% / 0.15);
+    background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 10%));
+}
+
 .group.text.icon {
     display: flex;
     align-items: center;
@@ -74,7 +100,7 @@ section.hero {
     padding: 2rem;
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1600&q=80");
+        url("bg-headlands.png");
     background-size: cover;
     background-position: center;
     color: var(--light);
@@ -207,5 +233,12 @@ section.featured-project {
     }
     img {
         max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+        transform: none;
+        rotate: 0deg;
+        image-orientation: from-image;
     }
 }

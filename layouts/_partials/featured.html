@@ -6,7 +6,6 @@
   </header>
   <p class="summary">{{ .Summary }}</p>
   {{ with .Resources.GetMatch "featured" }}
-  {{ $img := .Process "r270" }}
-  <img alt="" src="{{ $img.RelPermalink }}"/>
+  <img alt="" src="{{ .RelPermalink }}"/>
   {{ end }}
 </section>
