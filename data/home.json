@@ -1,6 +1,8 @@
 {
   "hero": {
     "heading": "San Francisco Software Engineer",
-    "subheading": "A software engineer, freelance web developer, and computer technologiest, Jackson is currently building a verified platform for SMBs. His previous engingeering roles include front-end development at AWS, backend development at ADT, and an instructional residency at Operation Spark. Check out his [personal projects](/portfolio) or visit [abstractionjackson@GitHub](https://github.com/abstractionjackson) to see the code he has written. Reach him via [email](mailto:hello@abstractionjackson.com)"
+    "subheading": "A software engineer, freelance web developer, and computer technologiest, Jackson is currently building a verified platform for SMBs. His previous engingeering roles include front-end development at AWS, backend development at ADT, and an instructional residency at Operation Spark. Check out his [personal projects](/portfolio) or visit [abstractionjackson@GitHub](https://github.com/abstractionjackson) to see the code he has written. Reach him via [email](mailto:hello@abstractionjackson.com)",
+    "media_url": "/portfolio/ex-libris/images/library-browse.gif",
+    "media_caption": "Currently building <em><a href=\"https://github.com/abstractionjackson/ex-libris\">Ex Libris</a></em>, an open-source reading tracker."
   }
 }

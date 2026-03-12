@@ -6,7 +6,17 @@
     <hgroup>
       <h1><span class="adjective">San Francisco</span> <span class="noun">Software Engineer</span></h1>
     </hgroup>
-    <p class="hero-subheading">{{ .subheading | markdownify }}</p>
+    <figure class="hero-video-wrapper">
+      <div class="hero-media-frame">
+        <img
+          class="hero-video"
+          src="{{ .media_url }}"
+          alt="Animated Ex Libris demo"
+        />
+        <div class="hero-bio">{{ .subheading | markdownify }}</div>
+      </div>
+      <figcaption class="hero-caption">{{ .media_caption | safeHTML }}</figcaption>
+    </figure>
   </header>
   {{ end }}
 </section>

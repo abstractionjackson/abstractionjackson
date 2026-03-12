@@ -1,27 +1,35 @@
 <!doctype html>
 <html lang="en">
     <head>
+        {{ $siteTitle := "Jackson Galan, Software Engineer | abstractionjackson" }}
+        {{ $siteDescription := "Portfolio, resume, and experiments from Jackson Galan, a San Francisco software engineer building thoughtful web products and open-source tools." }}
+        {{ $pageURL := .Permalink }}
+        {{ $socialImage := "/avatar-muir.png" | absURL }}
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- HTML Meta Tags -->
-        <title>Jackson Galan, Software Engineer | abstractionjackson</title>
-        <meta name="description" content="The portfolio and resume of San Francisco Software Engineer Jackson Galan ">
+        <title>{{ $siteTitle }}</title>
+        <meta name="description" content="{{ $siteDescription }}">
+        <link rel="canonical" href="{{ $pageURL }}">
+        <link rel="icon" type="image/png" href="/avatar-muir.png">
+        <link rel="apple-touch-icon" href="/avatar-muir.png">
 
         <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://abstractionjackson.com">
+        <meta property="og:url" content="{{ $pageURL }}">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Jackson Galan, Software Engineer | abstractionjackson">
-        <meta property="og:description" content="The portfolio and resume of San Francisco Software Engineer Jackson Galan ">
-        <meta property="og:image" content="avatar.jpeg">
+        <meta property="og:title" content="{{ $siteTitle }}">
+        <meta property="og:description" content="{{ $siteDescription }}">
+        <meta property="og:image" content="{{ $socialImage }}">
+        <meta property="og:image:alt" content="Portrait of Jackson Galan">
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta property="twitter:domain" content="abstractionjackson.com">
-        <meta property="twitter:url" content="https://abstractionjackson.com">
-        <meta name="twitter:title" content="Jackson Galan, Software Engineer | abstractionjackson">
-        <meta name="twitter:description" content="The portfolio and resume of San Francisco Software Engineer Jackson Galan ">
-        <meta name="twitter:image" content="avatar.jpeg">
-        <title>{{ site.Title }}</title>
+        <meta property="twitter:url" content="{{ $pageURL }}">
+        <meta name="twitter:title" content="{{ $siteTitle }}">
+        <meta name="twitter:description" content="{{ $siteDescription }}">
+        <meta name="twitter:image" content="{{ $socialImage }}">
+        <meta name="twitter:image:alt" content="Portrait of Jackson Galan">
         {{ with resources.Get "normalize.css" }}
         <link rel="stylesheet" href="{{ .RelPermalink }}" />
         {{ end }}
