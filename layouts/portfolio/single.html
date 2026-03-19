@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ $featured := .Resources.GetMatch "featured" }}
+<article class="content portfolio-item{{ if $featured }} has-featured-header{{ end }}">
+  <header class="portfolio-header">
+    <div class="portfolio-header-copy">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.github_repo }}
+      <p class="portfolio-header-actions">
+        <a class="portfolio-repo-link" href="{{ . }}">View on GitHub</a>
+      </p>
+      {{ end }}
+    </div>
+    {{ with $featured }}
+    <figure class="portfolio-header-media">
+      <img src="{{ .RelPermalink }}" alt="{{ $.Title }}" />
+    </figure>
+    {{ end }}
+  </header>
+  <div class="portfolio-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

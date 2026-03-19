@@ -86,6 +86,71 @@ body {
     background-color: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 10%));
 }
 
+.content .highlight {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 0.75rem;
+    border: 1px solid hsl(from var(--color-primary) h s l / 0.12);
+}
+
+.content .highlight pre {
+    margin: 0;
+    padding: 1rem;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+.content pre code {
+    white-space: pre;
+}
+
+.portfolio-item {
+    max-width: 72ch;
+}
+
+.portfolio-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsl(from var(--color-primary) h s l / 0.12);
+}
+
+.portfolio-header-copy h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.1;
+    @media (width > 768px) {
+        font-size: 2.75rem;
+    }
+}
+
+.portfolio-header-actions {
+    margin: 1rem 0 0;
+}
+
+.portfolio-repo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.65rem 1rem;
+    border-radius: 999px;
+    border: 1px solid hsl(from var(--color-primary) h s l / 0.2);
+    background: light-dark(hsl(0, 0%, 98%), hsl(0, 0%, 12%));
+    font-weight: 600;
+}
+
+.portfolio-header-media {
+    margin: 1.5rem 0 0;
+}
+
+.portfolio-header-media img {
+    margin: 0 auto;
+}
+
+.portfolio-item.has-featured-header .portfolio-body > figure:first-child {
+    display: none;
+}
+
 .group.text.icon {
     display: flex;
     align-items: center;

@@ -2,9 +2,10 @@
 date = '2026-03-19T09:00:37-08:00'
 title = 'cv'
 summary = '''A lightweight FastAPI resume workspace that keeps structured career data reusable, coordinated, and ready to export as polished documents.'''
+github_repo = 'https://github.com/abstractionjackson/cv'
 [[resources]]
 name = 'featured'
-src = 'images/feature3_document_render.png'
+src = 'images/branding.jpg'
 +++
 
 {{< figure src="images/branding.jpg" alt="cv project branding" caption="Composable resume management" >}}

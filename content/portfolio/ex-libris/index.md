@@ -3,6 +3,7 @@ date = '2026-01-24T15:00:37-08:00'
 title = 'Ex Libris'
 featured = true
 summary = '''Self-hosted book catalog and reading tracker built with FastAPI, SQLModel, and Alpine.js in just four days.'''
+github_repo = 'https://github.com/abstractionjackson/ex-libris'
 [[resources]]
 name = 'featured'
 src = 'images/branding.png'

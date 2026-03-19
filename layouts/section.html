@@ -4,6 +4,32 @@
         <h1>{{ .Title }}</h1>
     </header>
     <section>
+        {{ if eq .Section "portfolio" }}
+        <div class="latest-posts-grid">
+            {{ range .RegularPages.ByDate.Reverse }}
+            {{ $image := .Resources.GetMatch "featured" }}
+            {{ if not $image }}
+            {{ $image = .Resources.GetMatch "{*cover*,*hero*,*branding*,*thumb*}" }}
+            {{ end }}
+            <article class="post-card">
+                <a class="post-card-link" href="{{ .RelPermalink }}">
+                    <div class="post-card-media">
+                        {{ if $image }}
+                        <img src="{{ $image.RelPermalink }}" alt="{{ .Title }}" />
+                        {{ else }}
+                        <img src="/avatar-muir.png" alt="{{ .Title }}" />
+                        {{ end }}
+                    </div>
+                    <div class="post-card-body">
+                        <h3>{{ .Title }}</h3>
+                        <time>{{ .Date.Format "Jan 02, 2006" }}</time>
+                        <p>{{ .Summary | plainify }}</p>
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+        {{ else }}
         <ul>
             {{ range .RegularPages }}
             <li>
@@ -11,6 +37,7 @@
             </li>
             {{ end }}
         </ul>
+        {{ end }}
     </section>
 </div>
 {{ end }}
